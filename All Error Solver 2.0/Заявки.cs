@@ -25,8 +25,7 @@ namespace All_Error_Solver
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
-        {
-            
+        {            
         }
 
         private void Заявки_Load(object sender, EventArgs e)
