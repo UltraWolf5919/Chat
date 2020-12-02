@@ -125,7 +125,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Войти";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Login_Click);
             // 
             // button1
             // 
@@ -138,7 +138,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Отправить";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Send_Click);
             // 
             // menuStrip1
             // 
@@ -159,7 +159,7 @@
             this.настройкиToolStripMenuItem1.Name = "настройкиToolStripMenuItem1";
             this.настройкиToolStripMenuItem1.Size = new System.Drawing.Size(126, 26);
             this.настройкиToolStripMenuItem1.Text = "Настройки";
-            this.настройкиToolStripMenuItem1.Click += new System.EventHandler(this.настройкиToolStripMenuItem1_Click);
+            this.настройкиToolStripMenuItem1.Click += new System.EventHandler(this.SettingsToolStripMenuItem1_Click);
             // 
             // выходToolStripMenuItem1
             // 
@@ -168,7 +168,7 @@
             this.выходToolStripMenuItem1.Size = new System.Drawing.Size(79, 26);
             this.выходToolStripMenuItem1.Text = "Выход";
             this.выходToolStripMenuItem1.Visible = false;
-            this.выходToolStripMenuItem1.Click += new System.EventHandler(this.выходToolStripMenuItem1_Click);
+            this.выходToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
             // 
             // label5
             // 
@@ -190,7 +190,7 @@
             this.button3.TabIndex = 24;
             this.button3.Text = "Выход";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.Exit_Click);
             // 
             // Chat
             // 
@@ -216,7 +216,7 @@
             this.Name = "Chat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Чат";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Чат_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Chat_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

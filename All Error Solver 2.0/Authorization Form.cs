@@ -13,9 +13,9 @@ using MySql.Data.MySqlClient;
 
 namespace All_Error_Solver
 {
-    public partial class Sign_in : Form
+    public partial class Authorization : Form
     {
-        public Sign_in()
+        public Authorization()
         {
             InitializeComponent();
         }
@@ -41,8 +41,8 @@ namespace All_Error_Solver
                             connection.Close();
 
                             Main win2 = new Main();
-                            win2.button5.Visible = true;
-                            win2.button2.Visible = false;
+                            win2.Admin.Visible = true;
+                            win2.Requests.Visible = false;
 
                             Chat ch = new Chat();
                             ch.Show();
@@ -61,19 +61,37 @@ namespace All_Error_Solver
                 else
                 {
                     Chat ch = new Chat();
-                    ch.SendMessage("\n" + textBox1.Text + " вышел из чата." + ch.richTextBox2.Text + ";;;5");
-                    ch.button2.Enabled = true;
-                    ch.button1.Enabled = false;
-                    ch.button3.Enabled = false;
-
-                    textBox1.Clear();
-                    textBox1.Enabled = true;
-
-                    Chat.th.Abort();
 
                     Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                     if (ch.ip != null)
                     {
+                        //const string Connect = "Database = contacts ; Datasource = localhost; User ID = root; Password = 123";
+                        //using (MySqlConnection connection = new MySqlConnection(Connect))
+                        //{
+                        //    MySqlDataAdapter ada = new MySqlDataAdapter("SELECT * FROM `admin_auth` WHERE login='" + textBox1.Text + "' AND password='" + textBox2.Text + "'", connection);
+                        //    DataTable td = new DataTable();
+                        //    ada.Fill(td);
+                        //    if (td.Rows.Count > 0)
+                        //    {
+                        //        connection.Close();
+
+                        //        Main win2 = new Main();
+                        //        win2.button5.Visible = true;
+                        //        win2.button2.Visible = false;
+
+                        //        Chat chat = new Chat();
+                        //        chat.Show();
+
+                        //        Close();
+
+                        //        win2.ShowDialog();
+                        //    }
+                        //    else
+                        //    {
+                        //        MessageBox.Show("Неправильный логин или пароль", "Ошибка");
+                        //    }
+                        //}
+
                         try
                         {
                             Chat.Client.Connect(ch.ip, ch.port);
@@ -87,7 +105,7 @@ namespace All_Error_Solver
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
+                            MessageBox.Show("Неправильный логин или пароль.", "Ошибка", MessageBoxButtons.OK);
                         }
                     }
 
@@ -96,7 +114,7 @@ namespace All_Error_Solver
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void SignIn_Click(object sender, EventArgs e)
         {
             Log_in win2 = new Log_in();
             win2.ShowDialog();

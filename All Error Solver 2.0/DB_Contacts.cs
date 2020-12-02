@@ -11,7 +11,7 @@ namespace All_Error_Solver
 {
     class DB_Contacts //
     {
-        public static MySqlConnection getconfig()
+        public static MySqlConnection Getconfig()
         {
             string host = "localhost";
             string port = "3306"; 
@@ -25,10 +25,10 @@ namespace All_Error_Solver
 
         }
         
-        public static DataTable getdt(string sql) //SQL запрос с выводом таблиц
+        public static DataTable Getdt(string sql) //SQL запрос с выводом таблиц
         {
             DataTable dt = new DataTable();
-            MySqlConnection conn = getconfig();
+            MySqlConnection conn = Getconfig();
             MySqlCommand com = new MySqlCommand(sql, conn);
             try
             {
@@ -50,9 +50,9 @@ namespace All_Error_Solver
             return dt;
         }
 
-        public static void query(string sql)
+        public static void Query(string sql)
         {
-            MySqlConnection conn = getconfig();
+            MySqlConnection conn = Getconfig();
             MySqlCommand command = new MySqlCommand(@sql, conn);
             try
             {

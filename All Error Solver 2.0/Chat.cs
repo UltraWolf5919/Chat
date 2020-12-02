@@ -52,13 +52,13 @@ namespace All_Error_Solver
             }
         }
 
-        private void настройкиToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void SettingsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             Settings form = new Settings();
             form.Show();
         }
 
-        private void выходToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             if (th != null) // открытие окна настроек
             {
@@ -120,7 +120,7 @@ namespace All_Error_Solver
             }
         }
 
-        private void button2_Click(object sender, EventArgs e) 
+        private void Login_Click(object sender, EventArgs e) 
         {
             if (textBox1.Text == "")
             {
@@ -161,13 +161,13 @@ namespace All_Error_Solver
             }
         }
 
-        private void button1_Click(object sender, EventArgs e) // Отправить
+        private void Send_Click(object sender, EventArgs e) // Отправить
         {
             SendMessage("\n" + textBox1.Text + ": " + richTextBox2.Text + ";;;5");
             richTextBox2.Clear();
         }
 
-        private void button3_Click(object sender, EventArgs e) // выход из чата
+        private void Exit_Click(object sender, EventArgs e) // выход из чата
         {
             //SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
             //button2.Enabled = true;
@@ -180,7 +180,7 @@ namespace All_Error_Solver
             //th.Abort();
         }
 
-        private void Чат_FormClosing(object sender, FormClosingEventArgs e)
+        private void Chat_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (button3.Enabled == true)
             {

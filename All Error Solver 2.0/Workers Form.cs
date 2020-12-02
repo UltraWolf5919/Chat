@@ -24,9 +24,9 @@ namespace All_Error_Solver
          
         }
 
-        private void БД_Load(object sender, EventArgs e)
+        private void Workers_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DB_Contacts.getdt("SELECT * FROM contacts");
+            dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM contacts");
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -34,9 +34,9 @@ namespace All_Error_Solver
             
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = DB_Contacts.getdt(@"SELECT * FROM contacts WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
-        }
+            dataGridView1.DataSource = DB_Contacts.Getdt(@"SELECT * FROM contacts WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
+        }        
     }
 }

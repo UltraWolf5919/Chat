@@ -17,53 +17,43 @@ namespace All_Error_Solver
             InitializeComponent();
         }
 
-        private void Главная_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
+        private void Requests_Click(object sender, EventArgs e)
         {
             Requests win2 = new Requests();
             win2.groupBox1.Visible = false;
             win2.ShowDialog();
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void Workers_Click(object sender, EventArgs e)
         {
             Workers win2 = new Workers();
             win2.ShowDialog();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Solve_Click_1(object sender, EventArgs e)
         {
-            Sign_in win2 = new Sign_in();
+            Authorization win2 = new Authorization();
             win2.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Admin_Click(object sender, EventArgs e)
         {
             Requests win2 = new Requests();
             win2.groupBox1.Visible = true;
             win2.ShowDialog();
-        }
+        }              
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            //Sign_in win2 = new Sign_in();
-            //win2.ShowDialog();
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("mailto:task@itservo.ru");
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("mailto:sales@axus.name ");
         }
 
-        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void LinkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("mailto:service-center@axus.name");
         }
