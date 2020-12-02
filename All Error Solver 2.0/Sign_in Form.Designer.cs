@@ -47,7 +47,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(15, 159);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 40);
+            this.button1.Size = new System.Drawing.Size(103, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "Вход";
             this.button1.UseVisualStyleBackColor = false;
@@ -56,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 28);
+            this.label1.Location = new System.Drawing.Point(52, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 1;
@@ -65,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(58, 72);
+            this.label2.Location = new System.Drawing.Point(64, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 2;
@@ -73,14 +73,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 25);
+            this.textBox1.Location = new System.Drawing.Point(115, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 69);
+            this.textBox2.Location = new System.Drawing.Point(115, 74);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
@@ -102,12 +102,13 @@
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(141, 159);
+            this.button2.Location = new System.Drawing.Point(148, 159);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 40);
+            this.button2.Size = new System.Drawing.Size(103, 40);
             this.button2.TabIndex = 6;
             this.button2.Text = "Регистрация";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Sign_in
             // 
@@ -124,7 +125,6 @@
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.MaximizeBox = false;
             this.Name = "Sign_in";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

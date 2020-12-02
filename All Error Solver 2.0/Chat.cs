@@ -17,9 +17,9 @@ namespace All_Error_Solver
 {
     public partial class Chat : Form
     {
-        static private Socket Client;
-        private IPAddress ip = null;
-        private int port = 0;
+        static public Socket Client;
+        public IPAddress ip = null;
+        public int port = 0;
         public static Thread th;
 
         public Chat()
@@ -77,7 +77,7 @@ namespace All_Error_Solver
             }
         }
 
-        void RecvMessage()
+        public void RecvMessage()
         {
             byte[] buffer = new byte[1024];
             for (int i = 0; i < buffer.Length; i++)

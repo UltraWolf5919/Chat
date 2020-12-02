@@ -283,16 +283,17 @@ D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\bin\Debug\System.
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\bin\Debug\WebMatrix.Data.xml
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.xml
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Главная.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Properties.Resources.resources
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Настройки.resources
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.БД.resources
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Чат.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.GenerateResource.cache
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CoreCompileInputs.cache
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CopyComplete
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.exe
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\bin\Debug\All Error Solver.pdb
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Заявки.resources
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Авторизация.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Log_in.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Sign_in.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Settings.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.resources

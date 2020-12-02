@@ -295,7 +295,7 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Введите текст";
             // 
-            // Заявки
+            // Requests
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,7 +311,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Заявки";
+            this.Name = "Requests";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Статусы выполнения заявок";
             this.Load += new System.EventHandler(this.Заявки_Load);
