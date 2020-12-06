@@ -136,11 +136,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB_Contacts.cs" />
-    <Compile Include="Log_in Form.cs">
+    <Compile Include="Sign in Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Log_in Form.Designer.cs">
-      <DependentUpon>Log_in Form.cs</DependentUpon>
+    <Compile Include="Sign in Form.Designer.cs">
+      <DependentUpon>Sign in Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Authorization Form.cs">
       <SubType>Form</SubType>
@@ -180,8 +180,8 @@
     <Compile Include="Chat.Designer.cs">
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Log_in Form.resx">
-      <DependentUpon>Log_in Form.cs</DependentUpon>
+    <EmbeddedResource Include="Sign in Form.resx">
+      <DependentUpon>Sign in Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Authorization Form.resx">
       <DependentUpon>Authorization Form.cs</DependentUpon>

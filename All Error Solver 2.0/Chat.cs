@@ -26,10 +26,7 @@ namespace All_Error_Solver
         {
             InitializeComponent();
 
-            richTextBox1.Enabled = false; 
-            richTextBox2.Enabled = false;
-            button1.Enabled = false;
-            button3.Enabled = false;
+            richTextBox1.Enabled = false;
 
             try
             {
@@ -42,13 +39,14 @@ namespace All_Error_Solver
                 
                 label4.Hide();
                 label5.ForeColor = Color.Green;
-                label5.Text = "Настройки: \nIP сервера: " + connect_info[0] + "\nПорт сервера: " + connect_info[1];
+                label5.Text = "IP сервера: " + connect_info[0] + "\nПорт сервера: " + connect_info[1];
             }
             catch (Exception)
             {
                 label4.Show();
                 label4.ForeColor = Color.Red;
                 label4.Text = "Настройки не найдены!";
+                MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
             }
         }
 
@@ -60,11 +58,22 @@ namespace All_Error_Solver
 
         private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            if (th != null) // открытие окна настроек
-            {
-                th.Abort();
-            }
-            Application.Exit();
+            //if (th != null)
+            //{
+            //    SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+            //    Send.Enabled = false;
+            //    richTextBox2.Clear();
+            //    richTextBox2.Enabled = false;
+            //    th.Abort();
+            //}
+            Authorization auth = new Authorization();
+
+            SendMessage("\n" + auth.textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+            Send.Enabled = false;
+            richTextBox2.Clear();
+            richTextBox2.Enabled = false;
+            th.Abort();
+            this.Close();
         }
 
         public void SendMessage(string message)
@@ -81,9 +90,7 @@ namespace All_Error_Solver
         {
             byte[] buffer = new byte[1024];
             for (int i = 0; i < buffer.Length; i++)
-            {
                 buffer[i] = 0;
-            }
 
             for (; ; )
             {
@@ -93,21 +100,16 @@ namespace All_Error_Solver
                     string message = Encoding.UTF8.GetString(buffer);
                     int count = message.IndexOf(";;;5");
                     if (count == -1)
-                    {
                         continue;
-                    }
 
                     string Clear_Message = "";
 
                     for (int i = 0; i < count; i++)
-                    {
                         Clear_Message += message[i];
-                    }
 
                     for (int i = 0; i < buffer.Length; i++)
-                    {
                         buffer[i] = 0;
-                    }
+
                     this.Invoke((MethodInvoker)delegate ()
                     {
                         richTextBox1.AppendText(Clear_Message);
@@ -122,43 +124,43 @@ namespace All_Error_Solver
 
         private void Login_Click(object sender, EventArgs e) 
         {
-            if (textBox1.Text == "")
-            {
-                MessageBox.Show("Поле имени не было заполнено.", "Ошибка", MessageBoxButtons.OK);
-            }
-            else
-            {
-                if (textBox1.Text != "" && textBox1.Text != " ")
-                {
-                    Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                    if (ip != null)
-                    {
-                        try
-                        {
-                            Client.Connect(ip, port);
-                            th = new Thread(delegate ()
-                            {
-                                RecvMessage();
-                            });
-                            th.Start();
+            //if (textBox1.Text == "")
+            //{
+            //    MessageBox.Show("Поле имени не было заполнено.", "Ошибка", MessageBoxButtons.OK);
+            //}
+            //else
+            //{
+            //    if (textBox1.Text != "" && textBox1.Text != " ")
+            //    {
+            //        Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            //        if (ip != null)
+            //        {
+            //            try
+            //            {
+            //                Client.Connect(ip, port);
+            //                th = new Thread(delegate ()
+            //                {
+            //                    RecvMessage();
+            //                });
+            //                th.Start();
 
-                            textBox1.Enabled = false;
+            //                textBox1.Enabled = false;
 
-                            button2.Enabled = false;
-                            button3.Enabled = true;
-                            button1.Enabled = true;
+            //                Login.Enabled = false;
+            //                Exit.Enabled = true;
+            //                Send.Enabled = true;
 
-                            richTextBox2.Enabled = true;
+            //                richTextBox2.Enabled = true;
 
-                            SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
-                        }
-                        catch (Exception)
-                        {
-                            MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
-                        }
-                    }
-                }
-            }
+            //                SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
+            //            }
+            //            catch (Exception)
+            //            {
+            //                MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
+            //            }
+            //        }
+            //    }
+            //}
         }
 
         private void Send_Click(object sender, EventArgs e) // Отправить
@@ -167,25 +169,12 @@ namespace All_Error_Solver
             richTextBox2.Clear();
         }
 
-        private void Exit_Click(object sender, EventArgs e) // выход из чата
-        {
-            //SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
-            //button2.Enabled = true;
-            //button1.Enabled = false;
-            //button3.Enabled = false;
-
-            //textBox1.Clear();
-            //textBox1.Enabled = true;
-
-            //th.Abort();
-        }
-
         private void Chat_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (button3.Enabled == true)
-            {
-                MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
-            }
+            //if (Exit.Enabled == true)
+            //{
+            //    MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
+            //}
         }
     }
 }
