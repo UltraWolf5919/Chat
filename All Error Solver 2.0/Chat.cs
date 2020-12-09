@@ -57,15 +57,7 @@ namespace All_Error_Solver
         }
 
         private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            //if (th != null)
-            //{
-            //    SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
-            //    Send.Enabled = false;
-            //    richTextBox2.Clear();
-            //    richTextBox2.Enabled = false;
-            //    th.Abort();
-            //}
+        {            
             Authorization auth = new Authorization();
 
             SendMessage("\n" + auth.textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
@@ -124,43 +116,43 @@ namespace All_Error_Solver
 
         private void Login_Click(object sender, EventArgs e) 
         {
-            //if (textBox1.Text == "")
-            //{
-            //    MessageBox.Show("Поле имени не было заполнено.", "Ошибка", MessageBoxButtons.OK);
-            //}
-            //else
-            //{
-            //    if (textBox1.Text != "" && textBox1.Text != " ")
-            //    {
-            //        Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            //        if (ip != null)
-            //        {
-            //            try
-            //            {
-            //                Client.Connect(ip, port);
-            //                th = new Thread(delegate ()
-            //                {
-            //                    RecvMessage();
-            //                });
-            //                th.Start();
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Поле имени не было заполнено.", "Ошибка", MessageBoxButtons.OK);
+            }
+            else
+            {
+                if (textBox1.Text != "" && textBox1.Text != " ")
+                {
+                    Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    if (ip != null)
+                    {
+                        try
+                        {
+                            Client.Connect(ip, port);
+                            th = new Thread(delegate ()
+                            {
+                                RecvMessage();
+                            });
+                            th.Start();
 
-            //                textBox1.Enabled = false;
+                            textBox1.Enabled = false;
 
-            //                Login.Enabled = false;
-            //                Exit.Enabled = true;
-            //                Send.Enabled = true;
+                            Login.Enabled = false;
+                            Exit.Enabled = true;
+                            Send.Enabled = true;
 
-            //                richTextBox2.Enabled = true;
+                            richTextBox2.Enabled = true;
 
-            //                SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
-            //            }
-            //            catch (Exception)
-            //            {
-            //                MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
-            //            }
-            //        }
-            //    }
-            //}
+                            SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
+                        }
+                    }
+                }
+            }
         }
 
         private void Send_Click(object sender, EventArgs e) // Отправить
@@ -175,6 +167,18 @@ namespace All_Error_Solver
             //{
             //    MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
             //}
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            if (th != null)
+            {
+                SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+                Send.Enabled = false;
+                richTextBox2.Clear();
+                richTextBox2.Enabled = false;
+                th.Abort();
+            }
         }
     }
 }

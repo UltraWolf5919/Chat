@@ -39,10 +39,11 @@
             this.Send = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.настройкиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.выходToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.свернутьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
-            this.свернутьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +104,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(126, 20);
             this.textBox1.TabIndex = 16;
-            this.textBox1.Visible = false;
             // 
             // Login
             // 
@@ -116,7 +116,6 @@
             this.Login.TabIndex = 14;
             this.Login.Text = "Войти";
             this.Login.UseVisualStyleBackColor = false;
-            this.Login.Visible = false;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
             // Send
@@ -140,7 +139,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.настройкиToolStripMenuItem1,
             this.свернутьToolStripMenuItem,
-            this.выходToolStripMenuItem1});
+            this.ExitToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(211, 9);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(322, 30);
@@ -155,13 +154,20 @@
             this.настройкиToolStripMenuItem1.Text = "Настройки";
             this.настройкиToolStripMenuItem1.Click += new System.EventHandler(this.SettingsToolStripMenuItem1_Click);
             // 
-            // выходToolStripMenuItem1
+            // свернутьToolStripMenuItem
             // 
-            this.выходToolStripMenuItem1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.выходToolStripMenuItem1.Name = "выходToolStripMenuItem1";
-            this.выходToolStripMenuItem1.Size = new System.Drawing.Size(79, 26);
-            this.выходToolStripMenuItem1.Text = "Выход";
-            this.выходToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
+            this.свернутьToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.свернутьToolStripMenuItem.Name = "свернутьToolStripMenuItem";
+            this.свернутьToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
+            this.свернутьToolStripMenuItem.Text = "Свернуть";
+            // 
+            // ExitToolStripMenuItem1
+            // 
+            this.ExitToolStripMenuItem1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1";
+            this.ExitToolStripMenuItem1.Size = new System.Drawing.Size(79, 26);
+            this.ExitToolStripMenuItem1.Text = "Выход";
+            this.ExitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
             // 
             // label5
             // 
@@ -184,13 +190,16 @@
             this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
             this.Exit.Visible = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // свернутьToolStripMenuItem
+            // label1
             // 
-            this.свернутьToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.свернутьToolStripMenuItem.Name = "свернутьToolStripMenuItem";
-            this.свернутьToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
-            this.свернутьToolStripMenuItem.Text = "Свернуть";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Имя админа";
             // 
             // Chat
             // 
@@ -198,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(533, 538);
-            this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -229,15 +238,16 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem1;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.RichTextBox richTextBox2;
         public System.Windows.Forms.Button Login;
         public System.Windows.Forms.Button Send;
         public System.Windows.Forms.Button Exit;
         private System.Windows.Forms.ToolStripMenuItem свернутьToolStripMenuItem;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Label label1;
     }
 }

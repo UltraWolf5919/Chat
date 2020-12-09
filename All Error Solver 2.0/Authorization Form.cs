@@ -22,7 +22,7 @@ namespace All_Error_Solver
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "") // ввод логина и пароля
+            if (textBox1.Text == "" || textBox2.Text == "") // проверка ввода логина и пароля
             {
                 MessageBox.Show("Введите логин и пароль", "Сообщение");
             }
@@ -42,10 +42,7 @@ namespace All_Error_Solver
 
                             Main win2 = new Main();
                             win2.Admin.Visible = true;
-                            win2.Requests.Visible = false;
-
-                            Chat ch = new Chat();
-                            ch.Show();
+                            win2.Requests.Visible = false;                            
 
                             Close();
 
@@ -65,33 +62,6 @@ namespace All_Error_Solver
                     Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                     if (ch.ip != null)
                     {
-                        //const string Connect = "Database = contacts ; Datasource = localhost; User ID = root; Password = 123";
-                        //using (MySqlConnection connection = new MySqlConnection(Connect))
-                        //{
-                        //    MySqlDataAdapter ada = new MySqlDataAdapter("SELECT * FROM `admin_auth` WHERE login='" + textBox1.Text + "' AND password='" + textBox2.Text + "'", connection);
-                        //    DataTable td = new DataTable();
-                        //    ada.Fill(td);
-                        //    if (td.Rows.Count > 0)
-                        //    {
-                        //        connection.Close();
-
-                        //        Main win2 = new Main();
-                        //        win2.button5.Visible = true;
-                        //        win2.button2.Visible = false;
-
-                        //        Chat chat = new Chat();
-                        //        chat.Show();
-
-                        //        Close();
-
-                        //        win2.ShowDialog();
-                        //    }
-                        //    else
-                        //    {
-                        //        MessageBox.Show("Неправильный логин или пароль", "Ошибка");
-                        //    }
-                        //}
-
                         try
                         {
                             Chat.Client.Connect(ch.ip, ch.port);

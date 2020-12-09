@@ -32,8 +32,20 @@ namespace All_Error_Solver
 
         private void Solve_Click_1(object sender, EventArgs e)
         {
-            Authorization win2 = new Authorization();
-            win2.ShowDialog();
+            if (Admin.Visible)
+            {
+                Chat ch = new Chat();
+                ch.Exit.Visible = true;
+                ch.Login.Visible = true;
+                ch.textBox1.Visible = true;
+                ch.label1.Visible = true;
+                ch.Show();
+            }
+            else
+            {
+                Authorization win2 = new Authorization();
+                win2.ShowDialog();
+            }            
         }
 
         private void Admin_Click(object sender, EventArgs e)
