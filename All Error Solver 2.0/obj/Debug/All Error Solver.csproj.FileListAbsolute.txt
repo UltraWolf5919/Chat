@@ -291,9 +291,9 @@ D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Err
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\bin\Debug\All Error Solver.pdb
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Log_in.resources
-D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Sign_in.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Settings.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.resources
 D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.resources
+D:\Program Files (x86)\VS Projects\Чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.resources

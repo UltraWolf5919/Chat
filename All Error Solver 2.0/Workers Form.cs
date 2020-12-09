@@ -19,19 +19,9 @@ namespace All_Error_Solver
             InitializeComponent();
         }
 
-        private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-         
-        }
-
         private void Workers_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM contacts");
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)

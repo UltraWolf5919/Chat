@@ -26,7 +26,8 @@ namespace All_Error_Solver
 
         private void Change_Click(object sender, EventArgs e)
         {
-            DB_Contacts.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text + "', `Задача` = '" + textBox5.Text + "',`Заказал` = '" + textBox6.Text + "',`Принял` = '" + textBox3.Text + "',`Дата_оформления` = '" + textBox4.Text + "',`Статус_заявки` = '" + textBox7.Text + "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+            DB_Contacts.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text + "', `Задача` = '" + textBox5.Text + "',`Заказал` = '" + textBox6.Text + "',`Принял` = '" + 
+                textBox3.Text + "',`Дата_оформления` = '" + textBox4.Text + "',`Статус_заявки` = '" + textBox7.Text + "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             Updatetablezayavki();
         }
 
@@ -51,7 +52,5 @@ namespace All_Error_Solver
         {
             Updatetablezayavki();
         }
-        
-
     }
 }
