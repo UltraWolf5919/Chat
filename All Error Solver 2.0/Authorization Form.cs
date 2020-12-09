@@ -20,7 +20,7 @@ namespace All_Error_Solver
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void LogIn_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "" || textBox2.Text == "") // ввод логина и пароля
             {
@@ -102,6 +102,8 @@ namespace All_Error_Solver
                             Chat.th.Start();
                             
                             ch.SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
+                            
+                            ch.Show();
                         }
                         catch (Exception)
                         {

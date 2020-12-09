@@ -38,7 +38,7 @@ namespace All_Error_Solver
             this.ClientSize = new System.Drawing.Size(764, 405);
             this.Name = "Log_in";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Log_in";
+            this.Text = "Sign in";
             this.ResumeLayout(false);
 
         }
