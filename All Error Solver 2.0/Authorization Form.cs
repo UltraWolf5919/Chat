@@ -30,30 +30,37 @@ namespace All_Error_Solver
             {
                 if (textBox1.Text == "admin" || textBox2.Text == "admin") // проверка админа на корректный ввод данных
                 {
-                    const string Connect = "Database = contacts ; Datasource = localhost; User ID = root; Password = 123";
-                    using (MySqlConnection connection = new MySqlConnection(Connect))
-                    {
-                        MySqlDataAdapter ada = new MySqlDataAdapter("SELECT * FROM `admin_auth` WHERE login='" + textBox1.Text + "' AND password='" + textBox2.Text + "'", connection);
-                        DataTable td = new DataTable();
-                        ada.Fill(td);
-                        if (td.Rows.Count > 0)
-                        {
-                            connection.Close();
+                    Main win2 = new Main();
+                    win2.Admin.Visible = true;
+                    win2.Requests.Visible = false;
 
-                            Main win2 = new Main();
-                            win2.Admin.Visible = true;
-                            win2.Requests.Visible = false;                            
+                    MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
+                    win2.ShowDialog();
 
-                            Close();
+                    //const string Connect = "Database = starostin ; Datasource = 192.168.201.10; User ID = isp434_starostin; Password = starostin";
+                    //using (MySqlConnection connection = new MySqlConnection(Connect))
+                    //{
+                    //    MySqlDataAdapter ada = new MySqlDataAdapter("SELECT * FROM `admin_auth` WHERE login='" + textBox1.Text + "' AND password='" + textBox2.Text + "'", connection);
+                    //    DataTable td = new DataTable();
+                    //    ada.Fill(td);
+                    //    if (td.Rows.Count > 0)
+                    //    {
+                    //        connection.Close();
 
-                            MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                            win2.ShowDialog();
-                        }
-                        else
-                        {
-                            MessageBox.Show("Неправильный логин или пароль", "Ошибка");
-                        }
-                    }
+                    //        Main win2 = new Main();
+                    //        win2.Admin.Visible = true;
+                    //        win2.Requests.Visible = false;                            
+
+                    //        Close();
+
+                    //        MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
+                    //        win2.ShowDialog();
+                    //    }
+                    //    else
+                    //    {
+                    //        MessageBox.Show("Неправильный логин или пароль", "Ошибка");
+                    //    }
+                    //}
                 }
                 else
                 {
@@ -71,13 +78,18 @@ namespace All_Error_Solver
                             });
                             Chat.th.Start();
                             
-                            ch.SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
-                            
+                            ch.SendMessage(textBox1.Text + " вошёл в чат." + ";;;5");
+
+                            ch.textBox1.Visible = false;
+                            ch.Exit.Visible = false;
+                            ch.Login.Visible = false;
+                            ch.label1.Visible = false;
+
                             ch.Show();
                         }
                         catch (Exception)
                         {
-                            MessageBox.Show("Неправильный логин или пароль.", "Ошибка", MessageBoxButtons.OK);
+                            MessageBox.Show("Неправильный логин или пароль.", "Ошибка", MessageBoxButtons.OK);                            
                         }
                     }
 

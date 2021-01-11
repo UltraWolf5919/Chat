@@ -28,6 +28,15 @@ namespace All_Error_Solver
 
             richTextBox1.Enabled = false;
 
+            if (textBox1.Text == "admin")
+            {
+                textBox1.Enabled = false;
+                Login.Visible = false;
+                Exit.Visible = false;
+            }                
+            else
+                textBox1.Enabled = true;
+
             try
             {
                 var sr = new StreamReader(@"Client_info/data_info.txt");
@@ -157,8 +166,17 @@ namespace All_Error_Solver
 
         private void Send_Click(object sender, EventArgs e) // Отправить
         {
-            SendMessage("\n" + textBox1.Text + ": " + richTextBox2.Text + ";;;5");
-            richTextBox2.Clear();
+            if (textBox1.Text == "admin")
+            {
+                SendMessage("\n" + textBox1.Text + ": " + richTextBox2.Text + ";;;5");
+                richTextBox2.Clear();
+            } 
+            else
+            {
+                Authorization win2 = new Authorization();
+                SendMessage("\n" + win2.textBox1.Text + ": " + richTextBox2.Text + ";;;5");
+                richTextBox2.Clear();
+            }
         }
 
         private void Chat_FormClosing(object sender, FormClosingEventArgs e)
@@ -173,6 +191,8 @@ namespace All_Error_Solver
         {
             if (th != null)
             {
+                Exit.Enabled = false;
+                Login.Enabled = true;
                 SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
                 Send.Enabled = false;
                 richTextBox2.Clear();

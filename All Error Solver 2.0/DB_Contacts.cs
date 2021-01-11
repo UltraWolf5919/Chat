@@ -13,7 +13,7 @@ namespace All_Error_Solver
     {
         public static MySqlConnection Getconfig()
         {
-            string host = "localhost", port = "3306", database = "contacts", username = "root", password = "123";
+            string host = "192.168.201.10", port = "3306", database = "isp434_starostin_", username = "isp434_starostin", password = "starostin";
             string connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password + ";charset= utf8";
             MySqlConnection conn = new MySqlConnection(connString);
             return conn;
