@@ -34,7 +34,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.SignIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -85,16 +84,6 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
             // 
-            // label3
-            // 
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(12, 119);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(251, 30);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Внимание! Авторизация доступна только для администраторов!";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // SignIn
             // 
             this.SignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(186)))), ((int)(((byte)(1)))));
@@ -117,7 +106,6 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(275, 211);
             this.Controls.Add(this.SignIn);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -140,8 +128,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button SignIn;
         public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button SignIn;
     }
 }

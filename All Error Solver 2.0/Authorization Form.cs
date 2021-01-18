@@ -36,31 +36,6 @@ namespace All_Error_Solver
 
                     MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
                     win2.ShowDialog();
-
-                    //const string Connect = "Database = starostin ; Datasource = 192.168.201.10; User ID = isp434_starostin; Password = starostin";
-                    //using (MySqlConnection connection = new MySqlConnection(Connect))
-                    //{
-                    //    MySqlDataAdapter ada = new MySqlDataAdapter("SELECT * FROM `admin_auth` WHERE login='" + textBox1.Text + "' AND password='" + textBox2.Text + "'", connection);
-                    //    DataTable td = new DataTable();
-                    //    ada.Fill(td);
-                    //    if (td.Rows.Count > 0)
-                    //    {
-                    //        connection.Close();
-
-                    //        Main win2 = new Main();
-                    //        win2.Admin.Visible = true;
-                    //        win2.Requests.Visible = false;                            
-
-                    //        Close();
-
-                    //        MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                    //        win2.ShowDialog();
-                    //    }
-                    //    else
-                    //    {
-                    //        MessageBox.Show("Неправильный логин или пароль", "Ошибка");
-                    //    }
-                    //}
                 }
                 else
                 {
@@ -92,8 +67,6 @@ namespace All_Error_Solver
                             MessageBox.Show("Неправильный логин или пароль.", "Ошибка", MessageBoxButtons.OK);                            
                         }
                     }
-
-                    //MessageBox.Show("Неправильный логин или пароль", "Ошибка");
                 }
             }
         }
