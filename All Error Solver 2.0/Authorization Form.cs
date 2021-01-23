@@ -73,8 +73,8 @@ namespace All_Error_Solver
 
         private void SignIn_Click(object sender, EventArgs e)
         {
-            Log_in win2 = new Log_in();
-            win2.ShowDialog();
+            //Log_in win2 = new Log_in();
+            //win2.ShowDialog();
         }
     }
 }

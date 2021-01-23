@@ -13,48 +13,53 @@ namespace All_Error_Solver
     {
         public static MySqlConnection Getconfig()
         {
-            string host = "192.168.201.10", port = "3306", database = "isp434_starostin_", username = "isp434_starostin", password = "starostin";
-            string connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password + ";charset= utf8";
-            MySqlConnection conn = new MySqlConnection(connString);
-            return conn;
+            string connstring = ";Server=" + Properties.Settings.Default.host +
+                ";Database=" + Properties.Settings.Default.database +
+                ";User Id=" + Properties.Settings.Default.username +
+                ";Port=" + Properties.Settings.Default.port +
+                ";Password=" + Properties.Settings.Default.password +
+                ";charset= utf8";
+            MySqlConnection connection = new MySqlConnection(connstring);
+            return connection;
         }
         
         public static DataTable Getdt(string sql) //SQL запрос с выводом таблиц
         {
-            DataTable dt = new DataTable();
-            MySqlConnection conn = Getconfig();
-            MySqlCommand com = new MySqlCommand(sql, conn);
+            DataTable datatable = new DataTable();
+            MySqlConnection connection = Getconfig();
+            MySqlCommand command = new MySqlCommand(sql, connection);
 
             try
             {
-                conn.Open();
-                using (MySqlDataReader dr = com.ExecuteReader())
+                connection.Open();
+                using (MySqlDataReader datareader = command.ExecuteReader())
                 {
-                    if (dr.HasRows)
-                        dt.Load(dr);
+                    if (datareader.HasRows)
+                        datatable.Load(datareader);
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            conn.Close();
-            conn.Dispose();
-            return dt;
+            connection.Close();
+            connection.Dispose();
+            return datatable;;
         }
 
         public static void Query(string sql)
         {
-            MySqlConnection conn = Getconfig();
-            MySqlCommand command = new MySqlCommand(@sql, conn);
+            MySqlConnection connection = Getconfig();
+            MySqlCommand command = new MySqlCommand(@sql, connection);
+
             try
             {
                 command.ExecuteNonQuery();
-                conn.Open();
+                connection.Open();
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show(ex.Message);
             }
         }
     }
