@@ -17,6 +17,9 @@ namespace All_Error_Solver
             string connString = "Server=" + host + ";Database=" + database + ";port=" + port + ";User Id=" + username + ";password=" + password + ";charset= utf8";
             MySqlConnection conn = new MySqlConnection(connString);
             return conn;
+
+            
+
         }
         
         public static DataTable Getdt(string sql) //SQL запрос с выводом таблиц

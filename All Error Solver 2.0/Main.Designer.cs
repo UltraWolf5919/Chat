@@ -74,7 +74,7 @@
             this.Workers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Workers.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Workers.ForeColor = System.Drawing.Color.White;
-            this.Workers.Location = new System.Drawing.Point(718, 139);
+            this.Workers.Location = new System.Drawing.Point(718, 119);
             this.Workers.Name = "Workers";
             this.Workers.Size = new System.Drawing.Size(182, 86);
             this.Workers.TabIndex = 2;
