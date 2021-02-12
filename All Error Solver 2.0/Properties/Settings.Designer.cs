@@ -12,7 +12,7 @@ namespace All_Error_Solver.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.201.10")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.201.12")]
         public string host {
             get {
                 return ((string)(this["host"]));
@@ -49,7 +49,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("isp434_starostin_")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ISP434_StarostinLF")]
         public string database {
             get {
                 return ((string)(this["database"]));
@@ -61,7 +61,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("isp434_starostin")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ISP434_StarostinLF_")]
         public string username {
             get {
                 return ((string)(this["username"]));
@@ -73,7 +73,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("starostin")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Avatar5919Leonid")]
         public string password {
             get {
                 return ((string)(this["password"]));

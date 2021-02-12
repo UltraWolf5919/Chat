@@ -3,19 +3,19 @@
   <Profiles />
   <Settings>
     <Setting Name="host" Type="System.String" Scope="User">
-      <Value Profile="(Default)">192.168.201.10</Value>
+      <Value Profile="(Default)">192.168.201.12</Value>
     </Setting>
     <Setting Name="port" Type="System.String" Scope="User">
       <Value Profile="(Default)">3306</Value>
     </Setting>
     <Setting Name="database" Type="System.String" Scope="User">
-      <Value Profile="(Default)">isp434_starostin_</Value>
+      <Value Profile="(Default)">ISP434_StarostinLF</Value>
     </Setting>
     <Setting Name="username" Type="System.String" Scope="User">
-      <Value Profile="(Default)">isp434_starostin</Value>
+      <Value Profile="(Default)">ISP434_StarostinLF_</Value>
     </Setting>
     <Setting Name="password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">starostin</Value>
+      <Value Profile="(Default)">Avatar5919Leonid</Value>
     </Setting>
   </Settings>
 </SettingsFile>
