@@ -22,53 +22,50 @@ namespace All_Error_Solver
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" || textBox2.Text == "") // проверка ввода логина и пароля
+            DataTable table = DB.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
+                new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
+                    new DbParameter { name = "@Password", value = passauthbox.Text } });
+
+            if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Введите логин и пароль", "Сообщение");
+                Main win2 = new Main();
+                win2.Admin.Visible = true;
+                win2.Requests.Visible = false;
+
+                MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
+                win2.ShowDialog();
             }
             else
             {
-                if (textBox1.Text == "admin" || textBox2.Text == "admin") // проверка админа на корректный ввод данных
-                {
-                    Main win2 = new Main();
-                    win2.Admin.Visible = true;
-                    win2.Requests.Visible = false;
+                Chat ch = new Chat();
 
-                    MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                    win2.ShowDialog();
-                }
-                else
+                Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                if (ch.ip != null)
                 {
-                    Chat ch = new Chat();
-
-                    Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                    if (ch.ip != null)
+                    try
                     {
-                        try
+                        Chat.Client.Connect(ch.ip, ch.port);
+                        Chat.th = new Thread(delegate ()
                         {
-                            Chat.Client.Connect(ch.ip, ch.port);
-                            Chat.th = new Thread(delegate ()
-                            {
-                                ch.RecvMessage();
-                            });
-                            Chat.th.Start();
-                            
-                            ch.SendMessage(textBox1.Text + " вошёл в чат." + ";;;5");
+                            ch.RecvMessage();
+                        });
+                        Chat.th.Start();
 
-                            ch.textBox1.Visible = false;
-                            ch.Exit.Visible = false;
-                            ch.Login.Visible = false;
-                            ch.label1.Visible = false;
+                        ch.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
 
-                            ch.Show();
-                        }
-                        catch (Exception)
-                        {
-                            MessageBox.Show("Неправильный логин или пароль.", "Ошибка", MessageBoxButtons.OK);                            
-                        }
+                        ch.textBox1.Visible = false;
+                        ch.Exit.Visible = false;
+                        ch.Login.Visible = false;
+                        ch.label1.Visible = false;
+
+                        ch.Show();
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Не удалось подключиться к чату.", "Ошибка", MessageBoxButtons.OK);
                     }
                 }
-            }
+            }            
         }
 
         private void SignIn_Click(object sender, EventArgs e)

@@ -9,58 +9,104 @@ using System.Windows.Forms;
 
 namespace All_Error_Solver
 {
-    class DB_Contacts
+    public class DbParameter
     {
-        public static MySqlConnection GetConfig()
+        public String name;
+        public Object value;
+    }
+
+    class DB
+    {
+        private static MySqlConnection getconnect()
         {
-            string connstring = ";Server=" + Properties.Settings.Default.host +
+            string connect = ";Server=" + Properties.Settings.Default.host +
+                ";Port=" + Properties.Settings.Default.port +
                 ";Database=" + Properties.Settings.Default.database +
                 ";User Id=" + Properties.Settings.Default.username +
-                ";Port=" + Properties.Settings.Default.port +
                 ";Password=" + Properties.Settings.Default.password +
-                ";charset= utf8";
-            MySqlConnection connection = new MySqlConnection(connstring);
+                ";charset=utf8";
+
+            MySqlConnection connection = new MySqlConnection(connect);
             return connection;
         }
 
-        public static DataTable Getdt(string sql)
+        public static DataTable select(string sql, List<DbParameter> parameters)
         {
-            DataTable datatable = new DataTable();
-            MySqlConnection connection = GetConfig();
+            MySqlConnection connection = getconnect();
             MySqlCommand command = new MySqlCommand(sql, connection);
+            DataTable table = new DataTable();
+
+            foreach (DbParameter item in parameters)
+            {
+                command.Parameters.AddWithValue(item.name, item.value);
+            }
 
             try
             {
                 connection.Open();
-                using (MySqlDataReader datareader = command.ExecuteReader())
-                {
-                    if (datareader.HasRows)
-                        datatable.Load(datareader);
-                }
+                table.Load(command.ExecuteReader());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            connection.Close();
-            connection.Dispose();
-            return datatable;
-        }
 
-        public static void Query(string sql)
-        {
-            MySqlConnection connection = GetConfig();
-            MySqlCommand command = new MySqlCommand(@sql, connection);
-
-            try
-            {
-                command.ExecuteNonQuery();
-                connection.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            return table;
         }
     }
+
+    //class DB_Contacts
+    //{
+    //    public static MySqlConnection GetConfig()
+    //    {
+    //        string connstring = ";Server=" + Properties.Settings.Default.host +
+    //            ";Database=" + Properties.Settings.Default.database +
+    //            ";User Id=" + Properties.Settings.Default.username +
+    //            ";Port=" + Properties.Settings.Default.port +
+    //            ";Password=" + Properties.Settings.Default.password +
+    //            ";charset= utf8";
+    //        MySqlConnection connection = new MySqlConnection(connstring);
+    //        return connection;
+    //    }
+
+    //    public static DataTable Getdt(string sql)
+    //    {
+    //        DataTable datatable = new DataTable();
+    //        MySqlConnection connection = GetConfig();
+    //        MySqlCommand command = new MySqlCommand(sql, connection);
+
+    //        try
+    //        {
+    //            connection.Open();
+    //            using (MySqlDataReader datareader = command.ExecuteReader())
+    //            {
+    //                if (datareader.HasRows)
+    //                    datatable.Load(datareader);
+    //            }
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            MessageBox.Show(ex.Message);
+    //        }
+    //        connection.Close();
+    //        connection.Dispose();
+    //        return datatable;
+    //    }
+
+    //    public static void Query(string sql)
+    //    {
+    //        MySqlConnection connection = GetConfig();
+    //        MySqlCommand command = new MySqlCommand(@sql, connection);
+
+    //        try
+    //        {
+    //            command.ExecuteNonQuery();
+    //            connection.Open();
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            MessageBox.Show(ex.Message);
+    //        }
+    //    }
+    //}
 }

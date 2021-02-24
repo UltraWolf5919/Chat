@@ -19,23 +19,44 @@ namespace All_Error_Solver
             InitializeComponent();  
         }
 
-        private void Updatetablezayavki()
+        private void Updatetablezayavki(List<testuser_exampledb> userlist = null)
         {
-            dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM zayavki");
+            dataGridView1.Rows.Clear();
+            List<testuser_exampledb> tu = new List<testuser_exampledb>();
+            if (userlist == null)
+                tu = testuser_exampledb.select();
+            else tu = userlist;
+
+            foreach (testuser_exampledb test in tu)
+            {
+                int r = dataGridView1.Rows.Add(test.user_id, test.user_name, test.user_pass, test.user_type);
+                dataGridView1.Rows[r].Tag = test;
+            }
+
+            //dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM zayavki");
+        }
+
+        private void Requests_Load(object sender, EventArgs e)
+        {
+            Updatetablezayavki();
         }
 
         private void Change_Click(object sender, EventArgs e)
         {
-            DB_Contacts.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text + "', `Задача` = '" + textBox5.Text + "',`Заказал` = '" + textBox6.Text + "',`Принял` = '" + 
-                textBox3.Text + "',`Дата_оформления` = '" + textBox4.Text + "',`Статус_заявки` = '" + textBox7.Text + "' WHERE `id` = " +
-                dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+            DB_Contacts.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text + 
+                "', `Задача` = '" + textBox5.Text + 
+                "',`Заказал` = '" + textBox6.Text + 
+                "',`Принял` = '" + textBox3.Text + 
+                "',`Дата_оформления` = '" + textBox4.Text + 
+                "',`Статус_заявки` = '" + textBox7.Text + 
+                "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             Updatetablezayavki();
         }
 
         private void AddRequest_Click(object sender, EventArgs e)
         {
-            DB_Contacts.Getdt("INSERT INTO zayavki (id,Задача,Заказал,Принял,Дата_оформления,Статус_заявки) VALUES('" + textBox2.Text + "','" + textBox5.Text + "','" + textBox6.Text + 
-                "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox7.Text + "')");
+            DB_Contacts.Getdt("INSERT INTO zayavki (id,Задача,Заказал,Принял,Дата_оформления,Статус_заявки) VALUES('" + textBox2.Text + "','" + 
+                textBox5.Text + "','" + textBox6.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox7.Text + "')");
             Updatetablezayavki();
         }
 
@@ -48,11 +69,6 @@ namespace All_Error_Solver
         {
             DB_Contacts.Getdt(@" DELETE FROM zayavki WHERE id =" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             Updatetablezayavki();
-        }
-
-        private void Requests_Load(object sender, EventArgs e)
-        {
-            Updatetablezayavki();
-        }
+        }        
     }
 }

@@ -136,6 +136,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB_Contacts.cs" />
+    <Compile Include="Contacts_Class.cs" />
     <Compile Include="Sign in Form.cs">
       <SubType>Form</SubType>
     </Compile>

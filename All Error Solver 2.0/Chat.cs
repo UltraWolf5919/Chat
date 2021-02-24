@@ -69,7 +69,7 @@ namespace All_Error_Solver
         {            
             Authorization auth = new Authorization();
 
-            SendMessage("\n" + auth.textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+            SendMessage("\n" + auth.loginauthbox.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
             Send.Enabled = false;
             richTextBox2.Clear();
             richTextBox2.Enabled = false;
@@ -174,7 +174,7 @@ namespace All_Error_Solver
             else
             {
                 Authorization win2 = new Authorization();
-                SendMessage("\n" + win2.textBox1.Text + ": " + richTextBox2.Text + ";;;5");
+                SendMessage("\n" + win2.loginauthbox.Text + ": " + richTextBox2.Text + ";;;5");
                 richTextBox2.Clear();
             }
         }
