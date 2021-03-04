@@ -31,7 +31,7 @@ namespace All_Error_Solver
 
             foreach (Contacts_Class test in cc)
             {
-                int r = dataGridView1.Rows.Add(test.id, test.FIO, test.Position, test.Mail, test.Phone_number);
+                int r = dataGridView1.Rows.Add(test.id, test.FIO, test.Position, test.Mail, test.Phone_number, test.Adress);
                 dataGridView1.Rows[r].Tag = test;
             }
         }

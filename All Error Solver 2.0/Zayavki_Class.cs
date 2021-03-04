@@ -13,7 +13,7 @@ namespace All_Error_Solver
         public string Task { get; set; }
         public string Сlient { get; set; }
         public string Worker { get; set; }
-        public string Date_of_issue { get; set; }
+        public DateTime Date_of_issue { get; set; }
         public string Request_status { get; set; }
 
         //public enum UserType
@@ -27,7 +27,7 @@ namespace All_Error_Solver
             Task = Convert.ToString(row["Task"]);
             Сlient = Convert.ToString(row["Сlient"]);
             Worker = Convert.ToString(row["Worker"]);
-            Date_of_issue = Convert.ToString(row["Date_of_issue"]);
+            Date_of_issue = Convert.ToDateTime(row["Date_of_issue"]);
             Request_status = Convert.ToString(row["Request_status"]);
         }
 
