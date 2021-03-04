@@ -22,43 +22,43 @@ namespace All_Error_Solver
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-            DataTable table = DB.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
+            DataTable table = New_DB.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
                 new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
                     new DbParameter { name = "@Password", value = passauthbox.Text } });
 
             if (table.Rows.Count > 0)
             {
-                Main win2 = new Main();
-                win2.Admin.Visible = true;
-                win2.Requests.Visible = false;
+                Main main = new Main();
+                main.Admin.Visible = true;
+                main.Requests.Visible = false;
 
                 MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                win2.ShowDialog();
+                main.ShowDialog();
             }
             else
             {
-                Chat ch = new Chat();
+                Chat chat = new Chat();
 
                 Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                if (ch.ip != null)
+                if (chat.ip != null)
                 {
                     try
                     {
-                        Chat.Client.Connect(ch.ip, ch.port);
+                        Chat.Client.Connect(chat.ip, chat.port);
                         Chat.th = new Thread(delegate ()
                         {
-                            ch.RecvMessage();
+                            chat.RecvMessage();
                         });
                         Chat.th.Start();
 
-                        ch.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
+                        chat.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
 
-                        ch.textBox1.Visible = false;
-                        ch.Exit.Visible = false;
-                        ch.Login.Visible = false;
-                        ch.label1.Visible = false;
+                        chat.textBox1.Visible = false;
+                        chat.Exit.Visible = false;
+                        chat.Login.Visible = false;
+                        chat.label1.Visible = false;
 
-                        ch.Show();
+                        chat.Show();
                     }
                     catch (Exception)
                     {

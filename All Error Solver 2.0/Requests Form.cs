@@ -19,21 +19,24 @@ namespace All_Error_Solver
             InitializeComponent();  
         }
 
-        private void Updatetablezayavki(List<testuser_exampledb> userlist = null)
+        //private void Loaddata(List<testuser_exampledb> userlist = null)
+        //{
+        //    dataGridView1.Rows.Clear();
+        //    List<testuser_exampledb> tu = new List<testuser_exampledb>();
+        //    if (userlist == null)
+        //        tu = testuser_exampledb.select();
+        //    else tu = userlist;
+
+        //    foreach (testuser_exampledb test in tu)
+        //    {
+        //        int r = dataGridView1.Rows.Add(test.user_id, test.user_name, test.user_pass, test.user_type);
+        //        dataGridView1.Rows[r].Tag = test;
+        //    }
+        //}
+
+        private void Updatetablezayavki()
         {
-            dataGridView1.Rows.Clear();
-            List<testuser_exampledb> tu = new List<testuser_exampledb>();
-            if (userlist == null)
-                tu = testuser_exampledb.select();
-            else tu = userlist;
-
-            foreach (testuser_exampledb test in tu)
-            {
-                int r = dataGridView1.Rows.Add(test.user_id, test.user_name, test.user_pass, test.user_type);
-                dataGridView1.Rows[r].Tag = test;
-            }
-
-            //dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM zayavki");
+            dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM zayavki");
         }
 
         private void Requests_Load(object sender, EventArgs e)

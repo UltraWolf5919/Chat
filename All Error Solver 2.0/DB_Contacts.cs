@@ -15,7 +15,7 @@ namespace All_Error_Solver
         public Object value;
     }
 
-    class DB
+    class New_DB
     {
         private static MySqlConnection getconnect()
         {
@@ -55,58 +55,58 @@ namespace All_Error_Solver
         }
     }
 
-    //class DB_Contacts
-    //{
-    //    public static MySqlConnection GetConfig()
-    //    {
-    //        string connstring = ";Server=" + Properties.Settings.Default.host +
-    //            ";Database=" + Properties.Settings.Default.database +
-    //            ";User Id=" + Properties.Settings.Default.username +
-    //            ";Port=" + Properties.Settings.Default.port +
-    //            ";Password=" + Properties.Settings.Default.password +
-    //            ";charset= utf8";
-    //        MySqlConnection connection = new MySqlConnection(connstring);
-    //        return connection;
-    //    }
+    class DB_Contacts
+    {
+        public static MySqlConnection GetConfig()
+        {
+            string connstring = ";Server=" + Properties.Settings.Default.host +
+                ";Database=" + Properties.Settings.Default.database +
+                ";User Id=" + Properties.Settings.Default.username +
+                ";Port=" + Properties.Settings.Default.port +
+                ";Password=" + Properties.Settings.Default.password +
+                ";charset= utf8";
+            MySqlConnection connection = new MySqlConnection(connstring);
+            return connection;
+        }
 
-    //    public static DataTable Getdt(string sql)
-    //    {
-    //        DataTable datatable = new DataTable();
-    //        MySqlConnection connection = GetConfig();
-    //        MySqlCommand command = new MySqlCommand(sql, connection);
+        public static DataTable Getdt(string sql)
+        {
+            DataTable datatable = new DataTable();
+            MySqlConnection connection = GetConfig();
+            MySqlCommand command = new MySqlCommand(sql, connection);
 
-    //        try
-    //        {
-    //            connection.Open();
-    //            using (MySqlDataReader datareader = command.ExecuteReader())
-    //            {
-    //                if (datareader.HasRows)
-    //                    datatable.Load(datareader);
-    //            }
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            MessageBox.Show(ex.Message);
-    //        }
-    //        connection.Close();
-    //        connection.Dispose();
-    //        return datatable;
-    //    }
+            try
+            {
+                connection.Open();
+                using (MySqlDataReader datareader = command.ExecuteReader())
+                {
+                    if (datareader.HasRows)
+                        datatable.Load(datareader);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            connection.Close();
+            connection.Dispose();
+            return datatable;
+        }
 
-    //    public static void Query(string sql)
-    //    {
-    //        MySqlConnection connection = GetConfig();
-    //        MySqlCommand command = new MySqlCommand(@sql, connection);
+        public static void Query(string sql)
+        {
+            MySqlConnection connection = GetConfig();
+            MySqlCommand command = new MySqlCommand(@sql, connection);
 
-    //        try
-    //        {
-    //            command.ExecuteNonQuery();
-    //            connection.Open();
-    //        }
-    //        catch (Exception ex)
-    //        {
-    //            MessageBox.Show(ex.Message);
-    //        }
-    //    }
-    //}
+            try
+            {
+                command.ExecuteNonQuery();
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+    }
 }
