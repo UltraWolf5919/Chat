@@ -22,7 +22,7 @@ namespace All_Error_Solver
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-            DataTable table = New_DB.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
+            DataTable table = New_DB_Connect.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
                 new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
                     new DbParameter { name = "@Password", value = passauthbox.Text } });
 

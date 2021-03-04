@@ -22,7 +22,9 @@ namespace All_Error_Solver
         void loaddata(List<Contacts_Class> userlist = null)
         {
             dataGridView1.Rows.Clear();
+
             List<Contacts_Class> cc = new List<Contacts_Class>();
+
             if (userlist == null)
                 cc = Contacts_Class.select();
             else cc = userlist;
@@ -37,6 +39,7 @@ namespace All_Error_Solver
         private void Workers_Load(object sender, EventArgs e)
         {
             loaddata();
+
             //dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM contacts");
         }
 
