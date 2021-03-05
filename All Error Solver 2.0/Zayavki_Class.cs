@@ -34,12 +34,12 @@ namespace All_Error_Solver
         public static List<Zayavki_Class> select()
         {
             DataTable dt = New_DB_Connect.select("SELECT * FROM `zayavki` ", new List<DbParameter>());
-            List<Zayavki_Class> cc = new List<Zayavki_Class>();
+            List<Zayavki_Class> zc = new List<Zayavki_Class>();
 
             foreach (DataRow row in dt.Rows)
-                cc.Add(new Zayavki_Class(row));
+                zc.Add(new Zayavki_Class(row));
 
-            return cc;
+            return zc;
         }
 
         public void delete()
@@ -68,15 +68,15 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Request_status", value = Request_status} });
         }
 
-        public static List<Contacts_Class> search(string searchParam, string searchValue)
+        public static List<Zayavki_Class> search(string searchParam, string searchValue)
         {
-            DataTable dt = New_DB_Connect.select($"SELECT * FROM zayavki WHERE {searchParam} LIKE '% {searchValue} %';", new List<DbParameter>());
-            List<Contacts_Class> cc = new List<Contacts_Class>();
+            DataTable dt = New_DB_Connect.select($"SELECT * FROM zayavki WHERE {searchParam} LIKE '%{searchValue}%';", new List<DbParameter>());
+            List<Zayavki_Class> zc = new List<Zayavki_Class>();
 
             foreach (DataRow row in dt.Rows)
-                cc.Add(new Contacts_Class(row));
+                zc.Add(new Zayavki_Class(row));
 
-            return cc;
+            return zc;
         }
     }
 }

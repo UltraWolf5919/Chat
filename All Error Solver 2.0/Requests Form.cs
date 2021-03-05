@@ -40,48 +40,52 @@ namespace All_Error_Solver
         //}
 
         private void Requests_Load(object sender, EventArgs e)
-        {
+        {            
             Loaddata();
 
             //Updatetablezayavki();
         }
 
-        private void Change_Click(object sender, EventArgs e)
-        {
-
-
-            //Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text + 
-            //    "', `Задача` = '" + textBox5.Text + 
-            //    "',`Заказал` = '" + textBox6.Text + 
-            //    "',`Принял` = '" + textBox3.Text + 
-            //    "',`Дата_оформления` = '" + textBox4.Text + 
-            //    "',`Статус_заявки` = '" + textBox7.Text + 
-            //    "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
-            //Updatetablezayavki();
-        }
-
         private void AddRequest_Click(object sender, EventArgs e)
         {
-
+            Zayavki_Class.add(prinyalbox.Text, datebox.Text, taskbox.Text, Convert.ToDateTime(zakazbox.Text), statusbox.Text);
+            Loaddata();
 
             //Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Задача,Заказал,Принял,Дата_оформления,Статус_заявки) VALUES('" + textBox2.Text + "','" + 
             //    textBox5.Text + "','" + textBox6.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox7.Text + "')");
             //Updatetablezayavki();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-
-            //dataGridView1.DataSource = Old_DB_Connect.Getdt(@"SELECT * FROM zayavki WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
-        }
-
         private void Delete_Click(object sender, EventArgs e)
         {
-
+            ((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).delete();
+            Loaddata();
 
             //Old_DB_Connect.Getdt(@" DELETE FROM zayavki WHERE id =" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             //Updatetablezayavki();
-        }        
+        }
+
+        private void Change_Click(object sender, EventArgs e)
+        {
+            Zayavki_Class.update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).id,
+                prinyalbox.Text, datebox.Text, taskbox.Text, Convert.ToDateTime(zakazbox.Text), statusbox.Text);
+
+            //Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text +
+            //    "', `Задача` = '" + textBox5.Text +
+            //    "',`Заказал` = '" + textBox6.Text +
+            //    "',`Принял` = '" + textBox3.Text +
+            //    "',`Дата_оформления` = '" + textBox4.Text +
+            //    "',`Статус_заявки` = '" + textBox7.Text +
+            //    "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+            //Updatetablezayavki();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            List<Zayavki_Class> tu = Zayavki_Class.search(comboBox1.Text, searchbox.Text);
+            Loaddata(tu);
+
+            //dataGridView1.DataSource = Old_DB_Connect.Getdt(@"SELECT * FROM zayavki WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
+        }
     }
 }

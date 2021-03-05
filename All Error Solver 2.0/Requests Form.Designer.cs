@@ -30,23 +30,23 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Requests));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchbox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.statusbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.zakazbox = new System.Windows.Forms.TextBox();
+            this.datebox = new System.Windows.Forms.TextBox();
+            this.taskbox = new System.Windows.Forms.TextBox();
+            this.prinyalbox = new System.Windows.Forms.TextBox();
+            this.idbox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,32 +71,32 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Поиск";
             // 
-            // textBox1
+            // searchbox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(12, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 26);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.searchbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchbox.Location = new System.Drawing.Point(12, 109);
+            this.searchbox.Name = "searchbox";
+            this.searchbox.Size = new System.Drawing.Size(274, 26);
+            this.searchbox.TabIndex = 16;
+            this.searchbox.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.statusbox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.zakazbox);
+            this.groupBox1.Controls.Add(this.datebox);
+            this.groupBox1.Controls.Add(this.taskbox);
+            this.groupBox1.Controls.Add(this.prinyalbox);
+            this.groupBox1.Controls.Add(this.idbox);
             this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox1.Location = new System.Drawing.Point(292, 1);
             this.groupBox1.Name = "groupBox1";
@@ -143,13 +143,13 @@
             this.label7.TabIndex = 29;
             this.label7.Text = "Статус:";
             // 
-            // textBox7
+            // statusbox
             // 
-            this.textBox7.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(321, 121);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(139, 26);
-            this.textBox7.TabIndex = 28;
+            this.statusbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.statusbox.Location = new System.Drawing.Point(321, 121);
+            this.statusbox.Name = "statusbox";
+            this.statusbox.Size = new System.Drawing.Size(139, 26);
+            this.statusbox.TabIndex = 28;
             // 
             // label6
             // 
@@ -163,7 +163,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 100);
+            this.label5.Location = new System.Drawing.Point(3, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 18);
             this.label5.TabIndex = 26;
@@ -210,45 +210,45 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Change_Click);
             // 
-            // textBox6
+            // zakazbox
             // 
-            this.textBox6.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(321, 41);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(139, 26);
-            this.textBox6.TabIndex = 21;
+            this.zakazbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.zakazbox.Location = new System.Drawing.Point(321, 41);
+            this.zakazbox.Name = "zakazbox";
+            this.zakazbox.Size = new System.Drawing.Size(139, 26);
+            this.zakazbox.TabIndex = 21;
             // 
-            // textBox4
+            // datebox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(165, 41);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(124, 26);
-            this.textBox4.TabIndex = 20;
+            this.datebox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.datebox.Location = new System.Drawing.Point(165, 41);
+            this.datebox.Name = "datebox";
+            this.datebox.Size = new System.Drawing.Size(124, 26);
+            this.datebox.TabIndex = 20;
             // 
-            // textBox5
+            // taskbox
             // 
-            this.textBox5.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(165, 121);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(124, 26);
-            this.textBox5.TabIndex = 19;
+            this.taskbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.taskbox.Location = new System.Drawing.Point(165, 121);
+            this.taskbox.Name = "taskbox";
+            this.taskbox.Size = new System.Drawing.Size(124, 26);
+            this.taskbox.TabIndex = 19;
             // 
-            // textBox3
+            // prinyalbox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(6, 121);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(124, 26);
-            this.textBox3.TabIndex = 18;
+            this.prinyalbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.prinyalbox.Location = new System.Drawing.Point(6, 121);
+            this.prinyalbox.Name = "prinyalbox";
+            this.prinyalbox.Size = new System.Drawing.Size(124, 26);
+            this.prinyalbox.TabIndex = 18;
             // 
-            // textBox2
+            // idbox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(6, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(124, 26);
-            this.textBox2.TabIndex = 17;
+            this.idbox.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.idbox.Location = new System.Drawing.Point(6, 41);
+            this.idbox.Name = "idbox";
+            this.idbox.Size = new System.Drawing.Size(124, 26);
+            this.idbox.TabIndex = 17;
             // 
             // dataGridView1
             // 
@@ -298,11 +298,12 @@
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Задача",
-            "Заказал",
-            "Принял",
-            "Дата_ оформления",
-            "Статус_заявки"});
+            "id",
+            "Task",
+            "Client",
+            "Worker",
+            "Date_of_issue",
+            "Request_status"});
             this.comboBox1.Location = new System.Drawing.Point(12, 65);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(274, 23);
@@ -310,19 +311,21 @@
             // 
             // Column1
             // 
+            this.Column1.FillWeight = 15F;
             this.Column1.HeaderText = "ID";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Название задачи";
+            this.Column6.HeaderText = "Задача";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Имя клиента";
+            this.Column2.HeaderText = "Имя клинета";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -334,9 +337,11 @@
             // 
             // Column4
             // 
+            this.Column4.FillWeight = 50F;
             this.Column4.HeaderText = "Дата оформления заявки";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column5
             // 
@@ -356,7 +361,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.searchbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -374,17 +379,17 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox searchbox;
         public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox textBox6;
-        public System.Windows.Forms.TextBox textBox4;
-        public System.Windows.Forms.TextBox textBox5;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox zakazbox;
+        public System.Windows.Forms.TextBox datebox;
+        public System.Windows.Forms.TextBox taskbox;
+        public System.Windows.Forms.TextBox prinyalbox;
+        public System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox statusbox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
