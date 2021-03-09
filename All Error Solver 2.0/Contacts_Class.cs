@@ -14,7 +14,7 @@ namespace All_Error_Solver
         public string Position { get; set; }
         public string Mail { get; set; }
         public long Phone_number { get; set; }
-        public string Adress { get; set; }
+        public string Address { get; set; }
 
         //public enum UserType
         //{
@@ -28,7 +28,7 @@ namespace All_Error_Solver
             Position = Convert.ToString(row["Position"]);
             Mail = Convert.ToString(row["Mail"]);
             Phone_number = Convert.ToInt64(row["Phone_number"]);
-            Adress = Convert.ToString(row["Adress"]);
+            Address = Convert.ToString(row["Address"]);
         }
 
         public static List<Contacts_Class> select()
@@ -47,25 +47,25 @@ namespace All_Error_Solver
             New_DB_Connect.select("DELETE FROM `contacts` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = id } });
         }
 
-        public static void add(string FIO, string Position, string Mail, int Phone_number, string Adress)
+        public static void add(string FIO, string Position, string Mail, int Phone_number, string Address)
         {
-            New_DB_Connect.select("INSERT INTO `contacts` (`FIO`, `Position`, `Mail`, `Phone_number, `Adress`) VALUES (@FIO, @Position, @Mail, @Phone_number, @Adress);",
+            New_DB_Connect.select("INSERT INTO `contacts` (`FIO`, `Position`, `Mail`, `Phone_number, `Address`) VALUES (@FIO, @Position, @Mail, @Phone_number, @Address);",
               new List<DbParameter>() { new DbParameter {name = "@FIO", value = FIO},
                 new DbParameter {name = "@Position", value = Position},
                 new DbParameter {name = "@Mail", value = Mail},
                 new DbParameter {name = "@Phone_number", value = Phone_number},
-                new DbParameter {name = "@Adress", value = Adress} });
+                new DbParameter {name = "@Address", value = Address} });
         }
 
-        public static void update(int id, string FIO, string Position, string Mail, int Phone_number, string Adress)
+        public static void update(int id, string FIO, string Position, string Mail, int Phone_number, string Address)
         {
-            New_DB_Connect.select("UPDATE `contacts` SET `id` = @id, `FIO` = @FIO, `Position` = @Position, `Mail` = @Mail, `Phone_number` = @Phone_number, `Adress` = @Adress WHERE `contacts`.`id` = @id; ",
+            New_DB_Connect.select("UPDATE `contacts` SET `id` = @id, `FIO` = @FIO, `Position` = @Position, `Mail` = @Mail, `Phone_number` = @Phone_number, `Address` = @Address WHERE `contacts`.`id` = @id; ",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@FIO", value = FIO},
                 new DbParameter {name = "@Position", value = Position},
                 new DbParameter {name = "@Mail", value = Mail},
                 new DbParameter {name = "@Phone_number", value = Phone_number},
-                new DbParameter {name = "@Adress", value = Adress}});
+                new DbParameter {name = "@Address", value = Address}   });
         }
 
         public static List<Contacts_Class> search(string searchParam, string searchValue)
