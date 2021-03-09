@@ -69,10 +69,10 @@ namespace All_Error_Solver
         {            
             Authorization auth = new Authorization();
 
-            SendMessage("\n" + auth.loginauthbox.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+            SendMessage("\n" + auth.loginauthbox.Text + " вышел из чата." + message_entering_richtextbox.Text + ";;;5");
             Send.Enabled = false;
-            richTextBox2.Clear();
-            richTextBox2.Enabled = false;
+            message_entering_richtextbox.Clear();
+            message_entering_richtextbox.Enabled = false;
             th.Abort();
             this.Close();
         }
@@ -151,7 +151,7 @@ namespace All_Error_Solver
                             Exit.Enabled = true;
                             Send.Enabled = true;
 
-                            richTextBox2.Enabled = true;
+                            message_entering_richtextbox.Enabled = true;
 
                             SendMessage("\n" + textBox1.Text + " вошёл в чат." + ";;;5");
                         }
@@ -168,14 +168,14 @@ namespace All_Error_Solver
         {
             if (textBox1.Text == "admin")
             {
-                SendMessage("\n" + textBox1.Text + ": " + richTextBox2.Text + ";;;5");
-                richTextBox2.Clear();
+                SendMessage("\n" + textBox1.Text + ": " + message_entering_richtextbox.Text + ";;;5");
+                message_entering_richtextbox.Clear();
             } 
             else
             {
                 Authorization win2 = new Authorization();
-                SendMessage("\n" + win2.loginauthbox.Text + ": " + richTextBox2.Text + ";;;5");
-                richTextBox2.Clear();
+                SendMessage("\n" + win2.loginauthbox.Text + ": " + message_entering_richtextbox.Text + ";;;5");
+                message_entering_richtextbox.Clear();
             }
         }
 
@@ -193,12 +193,19 @@ namespace All_Error_Solver
             {
                 Exit.Enabled = false;
                 Login.Enabled = true;
-                SendMessage("\n" + textBox1.Text + " вышел из чата." + richTextBox2.Text + ";;;5");
+                SendMessage("\n" + textBox1.Text + " вышел из чата." + message_entering_richtextbox.Text + ";;;5");
                 Send.Enabled = false;
-                richTextBox2.Clear();
-                richTextBox2.Enabled = false;
+                message_entering_richtextbox.Clear();
+                message_entering_richtextbox.Enabled = false;
                 th.Abort();
             }
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (message_entering_richtextbox.Text == "")
+                message_entering_richtextbox.Text = Chat_message.Error_message;
+            else message_entering_richtextbox.Clear();
         }
     }
 }

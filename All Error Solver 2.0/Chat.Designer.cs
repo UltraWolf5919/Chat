@@ -30,9 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chat));
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.message_entering_richtextbox = new System.Windows.Forms.RichTextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Login = new System.Windows.Forms.Button();
@@ -49,72 +48,38 @@
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(246, 64);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "label4";
             // 
-            // richTextBox2
+            // message_entering_richtextbox
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(10, 480);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox2.Size = new System.Drawing.Size(416, 49);
-            this.richTextBox2.TabIndex = 20;
-            this.richTextBox2.Text = "";
+            resources.ApplyResources(this.message_entering_richtextbox, "message_entering_richtextbox");
+            this.message_entering_richtextbox.Name = "message_entering_richtextbox";
+            this.message_entering_richtextbox.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.richTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(10, 142);
+            resources.ApplyResources(this.richTextBox1, "richTextBox1");
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.richTextBox1.Size = new System.Drawing.Size(508, 303);
-            this.richTextBox1.TabIndex = 19;
-            this.richTextBox1.Text = "";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 9.75F);
-            this.label3.Location = new System.Drawing.Point(10, 459);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(172, 18);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Введите Ваше сообщение:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 9.75F);
-            this.label2.Location = new System.Drawing.Point(10, 121);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 18);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Окно чата";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 37);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 20);
-            this.textBox1.TabIndex = 16;
             // 
             // Login
             // 
             this.Login.BackColor = System.Drawing.Color.LimeGreen;
             this.Login.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Login.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Login.Location = new System.Drawing.Point(13, 63);
+            resources.ApplyResources(this.Login, "Login");
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(88, 26);
-            this.Login.TabIndex = 14;
-            this.Login.Text = "Войти";
             this.Login.UseVisualStyleBackColor = false;
             this.Login.Click += new System.EventHandler(this.Login_Click);
             // 
@@ -122,110 +87,76 @@
             // 
             this.Send.BackColor = System.Drawing.Color.LimeGreen;
             this.Send.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Send.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Send.Location = new System.Drawing.Point(435, 480);
+            resources.ApplyResources(this.Send, "Send");
             this.Send.Name = "Send";
-            this.Send.Size = new System.Drawing.Size(86, 49);
-            this.Send.TabIndex = 13;
-            this.Send.Text = "Отправить";
             this.Send.UseVisualStyleBackColor = false;
             this.Send.Click += new System.EventHandler(this.Send_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.настройкиToolStripMenuItem1,
             this.свернутьToolStripMenuItem,
             this.ExitToolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(211, 9);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(322, 30);
-            this.menuStrip1.TabIndex = 21;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // настройкиToolStripMenuItem1
             // 
-            this.настройкиToolStripMenuItem1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            resources.ApplyResources(this.настройкиToolStripMenuItem1, "настройкиToolStripMenuItem1");
             this.настройкиToolStripMenuItem1.Name = "настройкиToolStripMenuItem1";
-            this.настройкиToolStripMenuItem1.Size = new System.Drawing.Size(126, 26);
-            this.настройкиToolStripMenuItem1.Text = "Настройки";
             this.настройкиToolStripMenuItem1.Click += new System.EventHandler(this.SettingsToolStripMenuItem1_Click);
             // 
             // свернутьToolStripMenuItem
             // 
-            this.свернутьToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            resources.ApplyResources(this.свернутьToolStripMenuItem, "свернутьToolStripMenuItem");
             this.свернутьToolStripMenuItem.Name = "свернутьToolStripMenuItem";
-            this.свернутьToolStripMenuItem.Size = new System.Drawing.Size(109, 26);
-            this.свернутьToolStripMenuItem.Text = "Свернуть";
             // 
             // ExitToolStripMenuItem1
             // 
-            this.ExitToolStripMenuItem1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            resources.ApplyResources(this.ExitToolStripMenuItem1, "ExitToolStripMenuItem1");
             this.ExitToolStripMenuItem1.Name = "ExitToolStripMenuItem1";
-            this.ExitToolStripMenuItem1.Size = new System.Drawing.Size(79, 26);
-            this.ExitToolStripMenuItem1.Text = "Выход";
             this.ExitToolStripMenuItem1.Click += new System.EventHandler(this.ExitToolStripMenuItem1_Click);
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(379, 63);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 17);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "label5";
             // 
             // Exit
             // 
             this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Exit.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Exit.Location = new System.Drawing.Point(13, 95);
+            resources.ApplyResources(this.Exit, "Exit");
             this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(88, 23);
-            this.Exit.TabIndex = 24;
-            this.Exit.Text = "Выход";
             this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Visible = false;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Имя админа";
             // 
             // Chat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(533, 538);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.message_entering_richtextbox);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.Send);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Chat";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Чат";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Chat_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -237,13 +168,12 @@
         #endregion
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem настройкиToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem1;
         private System.Windows.Forms.Label label5;
-        public System.Windows.Forms.RichTextBox richTextBox2;
+        public System.Windows.Forms.RichTextBox message_entering_richtextbox;
         public System.Windows.Forms.Button Login;
         public System.Windows.Forms.Button Send;
         public System.Windows.Forms.Button Exit;

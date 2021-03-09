@@ -16,7 +16,7 @@ namespace All_Error_Solver
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Chat());
         }
     }
 }

@@ -135,6 +135,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chat_message.en.Designer.cs">
+      <DependentUpon>Chat_message.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Chat_message.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Chat_message.resx</DependentUpon>
+    </Compile>
     <Compile Include="DB_Connect.cs" />
     <Compile Include="Contacts_Class.cs" />
     <Compile Include="Sign in Form.cs">
@@ -182,6 +192,32 @@
       <DependentUpon>Chat.cs</DependentUpon>
     </Compile>
     <Compile Include="Zayavki_Class.cs" />
+    <EmbeddedResource Include="Authorization Form.en-AU.resx">
+      <DependentUpon>Authorization Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorization Form.en.resx">
+      <DependentUpon>Authorization Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat.en.resx">
+      <DependentUpon>Chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat_message.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Chat_message.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat_message.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Chat_message.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.en.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.nl-NL.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Requests Form.en.resx">
+      <DependentUpon>Requests Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sign in Form.resx">
       <DependentUpon>Sign in Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -206,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workers Form.en.resx">
+      <DependentUpon>Workers Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Workers Form.resx">
       <DependentUpon>Workers Form.cs</DependentUpon>

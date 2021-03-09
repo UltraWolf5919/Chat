@@ -489,3 +489,17 @@ Z:\Новая папка\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CopyComplete
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\All Error Solver.exe
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
+Z:\Новая папка\All Error Solver 2.0\bin\Debug\en-AU\All Error Solver.resources.dll
+Z:\Новая папка\All Error Solver 2.0\bin\Debug\en\All Error Solver.resources.dll
+Z:\Новая папка\All Error Solver 2.0\bin\Debug\nl-NL\All Error Solver.resources.dll
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat_message.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en-AU.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.en.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.en.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.nl-NL.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.en.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.en.resources
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
+Z:\Новая папка\All Error Solver 2.0\obj\Debug\nl-NL\All Error Solver.resources.dll
