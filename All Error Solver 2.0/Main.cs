@@ -19,15 +19,15 @@ namespace All_Error_Solver
 
         private void Requests_Click(object sender, EventArgs e)
         {
-            Requests win2 = new Requests();
-            win2.groupBox1.Visible = false;
-            win2.ShowDialog();
+            Requests req = new Requests();
+            req.groupBox1.Visible = false;
+            req.ShowDialog();
         }
 
         private void Workers_Click(object sender, EventArgs e)
         {
-            Workers win2 = new Workers();
-            win2.ShowDialog();
+            Workers work = new Workers();
+            work.ShowDialog();
         }
 
         private void Solve_Click_1(object sender, EventArgs e)
@@ -43,16 +43,16 @@ namespace All_Error_Solver
             }
             else
             {
-                Authorization win2 = new Authorization();
-                win2.ShowDialog();
+                Authorization auth = new Authorization();
+                auth.Show();
             }            
         }
 
         private void Admin_Click(object sender, EventArgs e)
         {
-            Requests win2 = new Requests();
-            win2.groupBox1.Visible = true;
-            win2.ShowDialog();
+            Requests admin_req = new Requests();
+            admin_req.groupBox1.Visible = true;
+            admin_req.ShowDialog();
         }              
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

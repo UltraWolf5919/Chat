@@ -22,45 +22,47 @@ namespace All_Error_Solver
 
         private void LogIn_Click(object sender, EventArgs e)
         {
-            DataTable table = New_DB_Connect.select("SELECT * FROM `admin_auth` WHERE `Login ` = @Login  and `Password ` = @Password;",
+            //DataTable admin_auth = Old_DB_Connect.Getdt($"SELECT * FROM `admin_auth` WHERE `Login` = '{loginauthbox.Text}'  and `Password` = '{passauthbox.Text}';");
+
+            DataTable admin_auth = New_DB_Connect.select("SELECT * FROM `admin_auth` WHERE `Login` = @Login  and `Password` = @Password;",
                 new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
                     new DbParameter { name = "@Password", value = passauthbox.Text } });
 
-            if (table.Rows.Count > 0)
+            if (admin_auth.Rows.Count > 0)
             {
-                Main main = new Main();
-                main.Admin.Visible = true;
-                main.Requests.Visible = false;
+                Main m = new Main();
+                m.Admin.Visible = true;
+                m.Requests.Visible = false;
 
                 MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                main.ShowDialog();
+                m.ShowDialog();
             }
             else
             {
-                Chat chat = new Chat();
+                Chat ch = new Chat();
 
                 Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-                if (chat.ip != null)
+                if (ch.ip != null)
                 {
                     try
                     {
-                        Chat.Client.Connect(chat.ip, chat.port);
+                        Chat.Client.Connect(ch.ip, ch.port);
                         Chat.th = new Thread(delegate ()
                         {
-                            chat.RecvMessage();
+                            ch.RecvMessage();
                         });
                         Chat.th.Start();
 
-                        chat.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
+                        ch.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
 
-                        chat.textBox1.Visible = false;
-                        chat.Exit.Visible = false;
-                        chat.Login.Visible = false;
-                        chat.label1.Visible = false;
+                        ch.textBox1.Visible = false;
+                        ch.Exit.Visible = false;
+                        ch.Login.Visible = false;
+                        ch.label1.Visible = false;
 
-                        chat.Show();
+                        ch.Show();
                     }
-                    catch (Exception)
+                    catch
                     {
                         MessageBox.Show("Не удалось подключиться к чату.", "Ошибка", MessageBoxButtons.OK);
                     }

@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.searchbox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.deletedbutton = new System.Windows.Forms.Button();
+            this.adddbutton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.statusbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.updatebutton = new System.Windows.Forms.Button();
             this.zakazbox = new System.Windows.Forms.TextBox();
             this.datebox = new System.Windows.Forms.TextBox();
             this.taskbox = new System.Windows.Forms.TextBox();
@@ -70,13 +70,12 @@
             // 
             resources.ApplyResources(this.searchbox, "searchbox");
             this.searchbox.Name = "searchbox";
-            this.searchbox.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.searchbox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.deletedbutton);
+            this.groupBox1.Controls.Add(this.adddbutton);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.statusbox);
             this.groupBox1.Controls.Add(this.label6);
@@ -84,34 +83,35 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.updatebutton);
             this.groupBox1.Controls.Add(this.zakazbox);
             this.groupBox1.Controls.Add(this.datebox);
             this.groupBox1.Controls.Add(this.taskbox);
             this.groupBox1.Controls.Add(this.prinyalbox);
             this.groupBox1.Controls.Add(this.idbox);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // button1
+            // deletedbutton
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.Color.Yellow;
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Delete_Click);
+            this.deletedbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.deletedbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.deletedbutton, "deletedbutton");
+            this.deletedbutton.ForeColor = System.Drawing.Color.Yellow;
+            this.deletedbutton.Name = "deletedbutton";
+            this.deletedbutton.UseVisualStyleBackColor = false;
+            this.deletedbutton.Click += new System.EventHandler(this.DeleteRequest_Click);
             // 
-            // button3
+            // adddbutton
             // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.ForeColor = System.Drawing.Color.Yellow;
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.AddRequest_Click);
+            this.adddbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.adddbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.adddbutton, "adddbutton");
+            this.adddbutton.ForeColor = System.Drawing.Color.Yellow;
+            this.adddbutton.Name = "adddbutton";
+            this.adddbutton.UseVisualStyleBackColor = false;
+            this.adddbutton.Click += new System.EventHandler(this.AddRequest_Click);
             // 
             // label7
             // 
@@ -148,15 +148,15 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // button2
+            // updatebutton
             // 
-            resources.ApplyResources(this.button2, "button2");
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.ForeColor = System.Drawing.Color.Yellow;
-            this.button2.Name = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Change_Click);
+            this.updatebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.updatebutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.updatebutton, "updatebutton");
+            this.updatebutton.ForeColor = System.Drawing.Color.Yellow;
+            this.updatebutton.Name = "updatebutton";
+            this.updatebutton.UseVisualStyleBackColor = false;
+            this.updatebutton.Click += new System.EventHandler(this.UpdateRequest_Click);
             // 
             // zakazbox
             // 
@@ -185,7 +185,6 @@
             // 
             // dataGridView1
             // 
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -199,6 +198,7 @@
             this.Column4,
             this.Column5});
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
@@ -301,7 +301,7 @@
         public System.Windows.Forms.TextBox prinyalbox;
         public System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button adddbutton;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox statusbox;
         private System.Windows.Forms.Label label6;
@@ -311,8 +311,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button deletedbutton;
+        private System.Windows.Forms.Button updatebutton;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;

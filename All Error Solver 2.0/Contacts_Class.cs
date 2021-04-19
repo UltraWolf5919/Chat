@@ -16,10 +16,10 @@ namespace All_Error_Solver
         public long Phone_number { get; set; }
         public string Address { get; set; }
 
-        //public enum UserType
-        //{
-        //    administrator, user
-        //}
+        /*public enum UserType
+        {
+            administrator, user
+        }*/
 
         public Contacts_Class(DataRow row)
         {

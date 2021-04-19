@@ -16,10 +16,10 @@ namespace All_Error_Solver
         public DateTime Date_of_issue { get; set; }
         public string Request_status { get; set; }
 
-        //public enum UserType
-        //{
-        //    administrator, user
-        //}
+        /*public enum UserType
+        {
+            administrator, user
+        }*/
 
         public Zayavki_Class(DataRow row)
         {

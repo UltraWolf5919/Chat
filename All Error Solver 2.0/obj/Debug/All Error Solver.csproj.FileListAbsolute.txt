@@ -503,3 +503,18 @@ Z:\Новая папка\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\nl-NL\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\en-AU\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\en\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\nl-NL\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat_message.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en-AU.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat_message.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.nl-NL.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.en.resources
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\nl-NL\All Error Solver.resources.dll

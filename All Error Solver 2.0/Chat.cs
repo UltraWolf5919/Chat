@@ -173,8 +173,8 @@ namespace All_Error_Solver
             } 
             else
             {
-                Authorization win2 = new Authorization();
-                SendMessage("\n" + win2.loginauthbox.Text + ": " + message_entering_richtextbox.Text + ";;;5");
+                Authorization auth = new Authorization();
+                SendMessage("\n" + auth.loginauthbox.Text + ": " + message_entering_richtextbox.Text + ";;;5");
                 message_entering_richtextbox.Clear();
             }
         }
