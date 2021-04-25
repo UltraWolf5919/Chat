@@ -25,7 +25,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("127.0.0.1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.201.12")]
         public string host {
             get {
                 return ((string)(this["host"]));
@@ -49,7 +49,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("aes")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ISP434_StarostinLF")]
         public string database {
             get {
                 return ((string)(this["database"]));
@@ -61,7 +61,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("root")]
+        [global::System.Configuration.DefaultSettingValueAttribute("ISP434_StarostinLF")]
         public string username {
             get {
                 return ((string)(this["username"]));
@@ -73,7 +73,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\tAvatar5919Leonid")]
         public string password {
             get {
                 return ((string)(this["password"]));
