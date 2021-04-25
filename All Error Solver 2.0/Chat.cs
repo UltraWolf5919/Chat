@@ -134,6 +134,8 @@ namespace All_Error_Solver
                 if (textBox1.Text != "" && textBox1.Text != " ")
                 {
                     Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                    Authorization auth = new Authorization();
+
                     if (ip != null)
                     {
                         try
@@ -170,7 +172,7 @@ namespace All_Error_Solver
             {
                 SendMessage("\n" + textBox1.Text + ": " + message_entering_richtextbox.Text + ";;;5");
                 message_entering_richtextbox.Clear();
-            } 
+            }
             else
             {
                 Authorization auth = new Authorization();
@@ -203,9 +205,9 @@ namespace All_Error_Solver
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
-            if (message_entering_richtextbox.Text == "")
-                message_entering_richtextbox.Text = Chat_message.Error_message;
-            else message_entering_richtextbox.Clear();
+            //if (message_entering_richtextbox.Text == "")
+            //    message_entering_richtextbox.Text = Chat_message.Error_message;
+            //else message_entering_richtextbox.Clear();
         }
     }
 }

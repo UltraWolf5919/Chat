@@ -293,16 +293,16 @@
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Name" xml:space="preserve">
-    <value>zakazbox</value>
+  <data name="&gt;&gt;clientbox.Name" xml:space="preserve">
+    <value>clientbox</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;zakazbox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="&gt;&gt;datebox.Name" xml:space="preserve">
@@ -329,16 +329,16 @@
   <data name="&gt;&gt;taskbox.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Name" xml:space="preserve">
-    <value>prinyalbox</value>
+  <data name="&gt;&gt;cotrudnikbox.Name" xml:space="preserve">
+    <value>cotrudnikbox</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="&gt;&gt;idbox.Name" xml:space="preserve">
@@ -471,7 +471,7 @@
     <value>321, 121</value>
   </data>
   <data name="statusbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 26</value>
+    <value>124, 26</value>
   </data>
   <data name="statusbox.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
@@ -492,7 +492,7 @@
     <value>True</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 20</value>
+    <value>318, 20</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 18</value>
@@ -519,16 +519,16 @@
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 100</value>
+    <value>162, 100</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 18</value>
+    <value>114, 18</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Принял:</value>
+    <value>Имя сотрудника:</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -546,16 +546,16 @@
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 20</value>
+    <value>162, 20</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 18</value>
+    <value>92, 18</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Заказал:</value>
+    <value>Имя клиента:</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -573,7 +573,7 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 100</value>
+    <value>6, 100</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 18</value>
@@ -650,35 +650,35 @@
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="zakazbox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="clientbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="zakazbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 41</value>
+  <data name="clientbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 41</value>
   </data>
-  <data name="zakazbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>139, 26</value>
+  <data name="clientbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 26</value>
   </data>
-  <data name="zakazbox.TabIndex" type="System.Int32, mscorlib">
+  <data name="clientbox.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Name" xml:space="preserve">
-    <value>zakazbox</value>
+  <data name="&gt;&gt;clientbox.Name" xml:space="preserve">
+    <value>clientbox</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;zakazbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;zakazbox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;clientbox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="datebox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="datebox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 41</value>
+    <value>321, 41</value>
   </data>
   <data name="datebox.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
@@ -702,7 +702,7 @@
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="taskbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 121</value>
+    <value>9, 121</value>
   </data>
   <data name="taskbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
@@ -722,28 +722,28 @@
   <data name="&gt;&gt;taskbox.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="prinyalbox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="cotrudnikbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="prinyalbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 121</value>
+  <data name="cotrudnikbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 121</value>
   </data>
-  <data name="prinyalbox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="cotrudnikbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
   </data>
-  <data name="prinyalbox.TabIndex" type="System.Int32, mscorlib">
+  <data name="cotrudnikbox.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Name" xml:space="preserve">
-    <value>prinyalbox</value>
+  <data name="&gt;&gt;cotrudnikbox.Name" xml:space="preserve">
+    <value>cotrudnikbox</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;prinyalbox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;cotrudnikbox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="idbox.Font" type="System.Drawing.Font, System.Drawing">
@@ -915,7 +915,7 @@
     <value>Task</value>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
-    <value>Client</value>
+    <value>Сlient</value>
   </data>
   <data name="comboBox1.Items3" xml:space="preserve">
     <value>Worker</value>

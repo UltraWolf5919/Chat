@@ -49,7 +49,7 @@ namespace All_Error_Solver
 
         public static void add(string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.select("INSERT INTO `zayavki` (`Task`, `Сlient`, `Worker`, `Date_of_issue, `Request_status`) VALUES (@Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
+            New_DB_Connect.select("INSERT INTO `zayavki` (`Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
               new List<DbParameter>() { new DbParameter {name = "@Task", value = Task},
                 new DbParameter {name = "@Сlient", value = Сlient},
                 new DbParameter {name = "@Worker", value = Worker},
@@ -59,7 +59,7 @@ namespace All_Error_Solver
 
         public static void update(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Сlient` = @Сlient, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `contacts`.`id` = @id;",
+            New_DB_Connect.select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Сlient` = @Сlient, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `zayavki`.`id` = @id;",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@Task", value = Task},
                 new DbParameter {name = "@Сlient", value = Сlient},

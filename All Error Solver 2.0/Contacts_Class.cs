@@ -28,7 +28,7 @@ namespace All_Error_Solver
             Position = Convert.ToString(row["Position"]);
             Mail = Convert.ToString(row["Mail"]);
             Phone_number = Convert.ToInt64(row["Phone_number"]);
-            Address = Convert.ToString(row["Address"]);
+            Address = Convert.ToString(row["Adress"]);
         }
 
         public static List<Contacts_Class> select()

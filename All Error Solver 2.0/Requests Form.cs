@@ -48,7 +48,7 @@ namespace All_Error_Solver
 
         private void AddRequest_Click(object sender, EventArgs e)
         {
-            Zayavki_Class.add(prinyalbox.Text, datebox.Text, taskbox.Text, Convert.ToDateTime(zakazbox.Text), statusbox.Text);
+            Zayavki_Class.add(taskbox.Text, clientbox.Text, cotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
             Loaddata();
 
             /*Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Задача,Заказал,Принял,Дата_оформления,Статус_заявки) VALUES('" + textBox2.Text + "','" +
@@ -59,7 +59,8 @@ namespace All_Error_Solver
         private void UpdateRequest_Click(object sender, EventArgs e)
         {
             Zayavki_Class.update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).id,
-                prinyalbox.Text, datebox.Text, taskbox.Text, Convert.ToDateTime(zakazbox.Text), statusbox.Text);
+                taskbox.Text, clientbox.Text, cotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
+            Loaddata();
 
             /*Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text +
                 "', `Задача` = '" + textBox5.Text +

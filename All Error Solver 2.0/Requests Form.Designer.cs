@@ -42,10 +42,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.updatebutton = new System.Windows.Forms.Button();
-            this.zakazbox = new System.Windows.Forms.TextBox();
+            this.clientbox = new System.Windows.Forms.TextBox();
             this.datebox = new System.Windows.Forms.TextBox();
             this.taskbox = new System.Windows.Forms.TextBox();
-            this.prinyalbox = new System.Windows.Forms.TextBox();
+            this.cotrudnikbox = new System.Windows.Forms.TextBox();
             this.idbox = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,10 +84,10 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.updatebutton);
-            this.groupBox1.Controls.Add(this.zakazbox);
+            this.groupBox1.Controls.Add(this.clientbox);
             this.groupBox1.Controls.Add(this.datebox);
             this.groupBox1.Controls.Add(this.taskbox);
-            this.groupBox1.Controls.Add(this.prinyalbox);
+            this.groupBox1.Controls.Add(this.cotrudnikbox);
             this.groupBox1.Controls.Add(this.idbox);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -158,10 +158,10 @@
             this.updatebutton.UseVisualStyleBackColor = false;
             this.updatebutton.Click += new System.EventHandler(this.UpdateRequest_Click);
             // 
-            // zakazbox
+            // clientbox
             // 
-            resources.ApplyResources(this.zakazbox, "zakazbox");
-            this.zakazbox.Name = "zakazbox";
+            resources.ApplyResources(this.clientbox, "clientbox");
+            this.clientbox.Name = "clientbox";
             // 
             // datebox
             // 
@@ -173,10 +173,10 @@
             resources.ApplyResources(this.taskbox, "taskbox");
             this.taskbox.Name = "taskbox";
             // 
-            // prinyalbox
+            // cotrudnikbox
             // 
-            resources.ApplyResources(this.prinyalbox, "prinyalbox");
-            this.prinyalbox.Name = "prinyalbox";
+            resources.ApplyResources(this.cotrudnikbox, "cotrudnikbox");
+            this.cotrudnikbox.Name = "cotrudnikbox";
             // 
             // idbox
             // 
@@ -295,10 +295,10 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox searchbox;
         public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox zakazbox;
+        public System.Windows.Forms.TextBox clientbox;
         public System.Windows.Forms.TextBox datebox;
         public System.Windows.Forms.TextBox taskbox;
-        public System.Windows.Forms.TextBox prinyalbox;
+        public System.Windows.Forms.TextBox cotrudnikbox;
         public System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button adddbutton;
