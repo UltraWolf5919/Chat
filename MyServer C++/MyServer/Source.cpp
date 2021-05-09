@@ -12,23 +12,22 @@ int ClientCount = 0;
 void SendMessageToClient(int ID)
 {
 	setlocale(LC_ALL, "");
-	char* buffer = new char[1024]; // сообщение
-	for (;; Sleep(75))
+	char* buffer;
+	for (; ; Sleep(750))
 	{
-		memset(buffer, 0, sizeof(buffer)); // стираем буфер, получаем новое сообщение
+		buffer = new char[1024];
+		memset(buffer, 0, sizeof(buffer)); //заполняет буфер символами "0"
+
 		if (recv(Connections[ID], buffer, 1024, NULL))
 		{
-			printf(buffer); // показываем сообщение
-			printf("\n");
-
-			// все пользователи получают данное сообщение
-			for (int i = 0; i <= ClientCount; i++)
+			printf("%s", buffer);
+			for (int i = 0; i <= ClientCount; i++) //Отправка каждому подключенному клиенту
 			{
 				send(Connections[i], buffer, strlen(buffer), NULL);
 			}
 		}
 	}
-	delete buffer;
+	free(buffer);
 }
 
 int main()
@@ -67,8 +66,8 @@ int main()
 
 	freeaddrinfo(result);
 
-	printf("Server started successfully...");
-	char m_connect[] = "Connected...;;;5";
+	printf("Server started successfully...\n");
+	char m_connect[] = "Connected...";
 
 	// обработка клиентов
 	for (;; Sleep(75))
