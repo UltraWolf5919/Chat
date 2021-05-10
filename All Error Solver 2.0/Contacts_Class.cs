@@ -9,7 +9,7 @@ namespace All_Error_Solver
 {
     class Contacts_Class
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string FIO { get; set; }
         public string Position { get; set; }
         public string Mail { get; set; }
@@ -23,17 +23,17 @@ namespace All_Error_Solver
 
         public Contacts_Class(DataRow row)
         {
-            id = Convert.ToInt32(row["id"]);
+            Id = Convert.ToInt32(row["id"]);
             FIO = Convert.ToString(row["FIO"]);
             Position = Convert.ToString(row["Position"]);
             Mail = Convert.ToString(row["Mail"]);
             Phone_number = Convert.ToInt64(row["Phone_number"]);
-            Address = Convert.ToString(row["Adress"]);
+            Address = Convert.ToString(row["Address"]);
         }
 
-        public static List<Contacts_Class> select()
+        public static List<Contacts_Class> Select()
         {
-            DataTable dt = New_DB_Connect.select("SELECT * FROM `contacts` ", new List<DbParameter>());
+            DataTable dt = New_DB_Connect.Select("SELECT * FROM `contacts` ", new List<DbParameter>());
             List<Contacts_Class> cc = new List<Contacts_Class>();
 
             foreach (DataRow row in dt.Rows)
@@ -42,14 +42,14 @@ namespace All_Error_Solver
             return cc;
         }
 
-        public void delete()
+        public void Delete()
         {
-            New_DB_Connect.select("DELETE FROM `contacts` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = id } });
+            New_DB_Connect.Select("DELETE FROM `contacts` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
-        public static void add(string FIO, string Position, string Mail, int Phone_number, string Address)
+        public static void Add(string FIO, string Position, string Mail, int Phone_number, string Address)
         {
-            New_DB_Connect.select("INSERT INTO `contacts` (`FIO`, `Position`, `Mail`, `Phone_number, `Address`) VALUES (@FIO, @Position, @Mail, @Phone_number, @Address);",
+            New_DB_Connect.Select("INSERT INTO `contacts` (`FIO`, `Position`, `Mail`, `Phone_number, `Address`) VALUES (@FIO, @Position, @Mail, @Phone_number, @Address);",
               new List<DbParameter>() { new DbParameter {name = "@FIO", value = FIO},
                 new DbParameter {name = "@Position", value = Position},
                 new DbParameter {name = "@Mail", value = Mail},
@@ -57,9 +57,9 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Address", value = Address} });
         }
 
-        public static void update(int id, string FIO, string Position, string Mail, int Phone_number, string Address)
+        public static void Update(int id, string FIO, string Position, string Mail, int Phone_number, string Address)
         {
-            New_DB_Connect.select("UPDATE `contacts` SET `id` = @id, `FIO` = @FIO, `Position` = @Position, `Mail` = @Mail, `Phone_number` = @Phone_number, `Address` = @Address WHERE `contacts`.`id` = @id; ",
+            New_DB_Connect.Select("UPDATE `contacts` SET `id` = @id, `FIO` = @FIO, `Position` = @Position, `Mail` = @Mail, `Phone_number` = @Phone_number, `Address` = @Address WHERE `contacts`.`id` = @id; ",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@FIO", value = FIO},
                 new DbParameter {name = "@Position", value = Position},
@@ -68,9 +68,9 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Address", value = Address}   });
         }
 
-        public static List<Contacts_Class> search(string searchParam, string searchValue)
+        public static List<Contacts_Class> Search(string searchParam, string searchValue)
         {
-            DataTable dt = New_DB_Connect.select($"SELECT * FROM contacts WHERE {searchParam} LIKE '%{searchValue}%';", new List<DbParameter>());
+            DataTable dt = New_DB_Connect.Select($"SELECT * FROM contacts WHERE {searchParam} LIKE '%{searchValue}%';", new List<DbParameter>());
             List<Contacts_Class> cc = new List<Contacts_Class>();
 
             foreach (DataRow row in dt.Rows)

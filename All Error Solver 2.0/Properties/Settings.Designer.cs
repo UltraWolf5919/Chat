@@ -73,7 +73,7 @@ namespace All_Error_Solver.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("\tAvatar5919Leonid")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Avatar5919Leonid")]
         public string password {
             get {
                 return ((string)(this["password"]));

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\x64\Debug\MyServer.exe</FullPath>
+      <FullPath>D:\Program Files (x86)\VS Projects\Chat\MyServer C++\x64\Debug\MyServer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

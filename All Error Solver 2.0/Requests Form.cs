@@ -1,13 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Data.OleDb;
-using MySql.Data.MySqlClient;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace All_Error_Solver
@@ -16,28 +8,30 @@ namespace All_Error_Solver
     {
         public Requests()
         {
-            InitializeComponent();  
+            InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void Loaddata(List<Zayavki_Class> userlist = null)
         {
             dataGridView1.Rows.Clear();
-            List<Zayavki_Class> zc = new List<Zayavki_Class>();
+            _ = new List<Zayavki_Class>();
+            List<Zayavki_Class> zc;
             if (userlist == null)
-                zc = Zayavki_Class.select();
+                zc = Zayavki_Class.Select();
             else zc = userlist;
 
             foreach (Zayavki_Class test in zc)
             {
-                int r = dataGridView1.Rows.Add(test.id, test.Task, test.Сlient, test.Worker, test.Date_of_issue, test.Request_status);
+                int r = dataGridView1.Rows.Add(test.Id, test.Task, test.Сlient, test.Worker, test.Date_of_issue, test.Request_status);
                 dataGridView1.Rows[r].Tag = test;
             }
         }
 
-        //private void Updatetablezayavki()
-        //{
-        //    dataGridView1.DataSource = Old_DB_Connect.Getdt("SELECT * FROM zayavki");
-        //}
+        private void Updatetablezayavki()
+        {
+            dataGridView1.DataSource = Old_DB_Connect.Getdt("SELECT * FROM zayavki");
+        }
 
         private void Requests_Load(object sender, EventArgs e)
         {            
@@ -48,42 +42,43 @@ namespace All_Error_Solver
 
         private void AddRequest_Click(object sender, EventArgs e)
         {
-            Zayavki_Class.add(taskbox.Text, clientbox.Text, sotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
-            Loaddata();
+            /*Zayavki_Class.Add(taskbox.Text, clientbox.Text, sotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
+            Loaddata();*/
 
-            /*Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Задача,Заказал,Принял,Дата_оформления,Статус_заявки) VALUES('" + textBox2.Text + "','" +
-                textBox5.Text + "','" + textBox6.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox7.Text + "')");*/
-            //Updatetablezayavki();
+            Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Task,Client,Worker,Date_of_issue,Request_status) VALUES('" + id_box.Text + "','" +
+                problem_box.Text + "','" + client_box.Text + "','" + sotrudnik_box.Text + "','" + date_box.Text + "','" + status_box.Text + "')");
+            Updatetablezayavki();
         }
 
         private void UpdateRequest_Click(object sender, EventArgs e)
         {
-            Zayavki_Class.update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).id,
+            /*Zayavki_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
                 taskbox.Text, clientbox.Text, sotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
-            Loaddata();
+            Loaddata();*/
 
-            /*Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + textBox2.Text +
-                "', `Задача` = '" + textBox5.Text +
-                "',`Заказал` = '" + textBox6.Text +
-                "',`Принял` = '" + textBox3.Text +
-                "',`Дата_оформления` = '" + textBox4.Text +
-                "',`Статус_заявки` = '" + textBox7.Text +
-                "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());*/
-            //Updatetablezayavki();
+            Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + id_box.Text +
+                "', `Problem` = '" + problem_box.Text +
+                "',`Client` = '" + client_box.Text +
+                "',`Worker` = '" + sotrudnik_box.Text +
+                "',`Date_of_issue` = '" + date_box.Text +
+                "',`Request_status` = '" + status_box.Text +
+                "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
+            Updatetablezayavki();
         }
 
         private void DeleteRequest_Click(object sender, EventArgs e)
         {
-            ((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).delete();
+            ((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Delete();
             Loaddata();
 
             //Old_DB_Connect.Getdt(@" DELETE FROM zayavki WHERE id =" + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
             //Updatetablezayavki();
-        }        
+        }
 
-        private void SearchBox_TextChanged(object sender, EventArgs e)
+        private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
-            List<Zayavki_Class> tu = Zayavki_Class.search(comboBox1.Text, searchbox.Text);
+            string[] Array = new string[] { "id", "Task", "Клиент", "Тех. специалист", "Дата обращения", "Статус выполнения" };
+            List<Zayavki_Class> tu = Zayavki_Class.Search(Array[comboBox1.SelectedIndex], searchbox.Text);
             Loaddata(tu);
 
             //dataGridView1.DataSource = Old_DB_Connect.Getdt(@"SELECT * FROM zayavki WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");

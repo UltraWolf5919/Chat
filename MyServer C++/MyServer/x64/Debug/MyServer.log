@@ -1,6 +1,6 @@
 ﻿  Source.cpp
-D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\MyServer\Source.cpp(26,54): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\MyServer\Source.cpp(64,50): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\MyServer\Source.cpp(79,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\MyServer\Source.cpp(81,99): warning C4312: приведение типов: преобразование из "int" в "LPVOID" большего размера
-  MyServer.vcxproj -> D:\Program Files (x86)\VS Projects\Сетевой чат\MyServer C++\x64\Debug\MyServer.exe
+D:\Program Files (x86)\VS Projects\Chat\MyServer C++\MyServer\Source.cpp(26,54): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Program Files (x86)\VS Projects\Chat\MyServer C++\MyServer\Source.cpp(64,50): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Program Files (x86)\VS Projects\Chat\MyServer C++\MyServer\Source.cpp(79,69): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Program Files (x86)\VS Projects\Chat\MyServer C++\MyServer\Source.cpp(81,99): warning C4312: приведение типов: преобразование из "int" в "LPVOID" большего размера
+  MyServer.vcxproj -> D:\Program Files (x86)\VS Projects\Chat\MyServer C++\x64\Debug\MyServer.exe

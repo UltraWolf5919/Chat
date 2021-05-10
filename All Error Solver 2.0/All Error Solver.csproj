@@ -51,7 +51,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Axus Integration.ico</ApplicationIcon>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
@@ -135,23 +135,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Chat_message.en.Designer.cs">
-      <DependentUpon>Chat_message.en.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Chat_message.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Chat_message.resx</DependentUpon>
-    </Compile>
     <Compile Include="DB_Connect.cs" />
     <Compile Include="Contacts_Class.cs" />
-    <Compile Include="Sign in Form.cs">
+    <Compile Include="NewPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sign in Form.Designer.cs">
-      <DependentUpon>Sign in Form.cs</DependentUpon>
+    <Compile Include="NewPassword.Designer.cs">
+      <DependentUpon>NewPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Authorization Form.cs">
       <SubType>Form</SubType>
@@ -179,6 +169,7 @@
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sotrudniki_Class.cs" />
     <Compile Include="Workers Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,25 +192,14 @@
     <EmbeddedResource Include="Chat.en.resx">
       <DependentUpon>Chat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Chat_message.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Chat_message.en.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Chat_message.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Chat_message.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.en.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.nl-NL.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="NewPassword.resx">
+      <DependentUpon>NewPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Requests Form.en.resx">
       <DependentUpon>Requests Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Sign in Form.resx">
-      <DependentUpon>Sign in Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Authorization Form.resx">
       <DependentUpon>Authorization Form.cs</DependentUpon>
@@ -267,7 +247,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Axus Integration.ico" />
+    <Content Include="logo.ico" />
+    <None Include="Resources\1digitization-4667376_1920_1x.jpg" />
+    <None Include="Resources\digital-background_1x.jpg" />
+    <None Include="Resources\calm-4878488_1920_1x.jpg" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\Axus Integration.png" />
   </ItemGroup>
   <ItemGroup>

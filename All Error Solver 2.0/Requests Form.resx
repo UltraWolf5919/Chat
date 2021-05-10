@@ -173,6 +173,27 @@
   <data name="&gt;&gt;searchbox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 26</value>
+  </data>
+  <data name="comboBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Name" xml:space="preserve">
+    <value>comboBox2</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="deletedbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
@@ -198,7 +219,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;deletedbutton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="adddbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -225,7 +246,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;adddbutton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -252,37 +273,37 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
-  <data name="statusbox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="status_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="statusbox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="status_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>321, 121</value>
   </data>
-  <data name="statusbox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="status_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
   </data>
-  <data name="statusbox.TabIndex" type="System.Int32, mscorlib">
+  <data name="status_box.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>
   </data>
-  <data name="&gt;&gt;statusbox.Name" xml:space="preserve">
-    <value>statusbox</value>
+  <data name="&gt;&gt;status_box.Name" xml:space="preserve">
+    <value>status_box</value>
   </data>
-  <data name="&gt;&gt;statusbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;status_box.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;statusbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;status_box.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;statusbox.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;status_box.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>318, 20</value>
+    <value>162, 100</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 18</value>
@@ -303,22 +324,22 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 100</value>
+    <value>0, 100</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 18</value>
+    <value>121, 18</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>26</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Имя сотрудника:</value>
+    <value> Тех. специалист:</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -330,13 +351,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 20</value>
+    <value>318, 20</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 18</value>
@@ -357,22 +378,22 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 100</value>
+    <value>162, 20</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 18</value>
+    <value>78, 18</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Задача:</value>
+    <value>Проблема:</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -384,22 +405,26 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 22</value>
+    <value>3, 22</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 18</value>
+    <value>113, 18</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>id</value>
+    <value>Номер договора</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -411,7 +436,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="updatebutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -438,127 +463,127 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="clientbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt</value>
-  </data>
-  <data name="clientbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 41</value>
-  </data>
-  <data name="clientbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 26</value>
-  </data>
-  <data name="clientbox.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;clientbox.Name" xml:space="preserve">
-    <value>clientbox</value>
-  </data>
-  <data name="&gt;&gt;clientbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;clientbox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;clientbox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="datebox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="client_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="datebox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="client_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>321, 41</value>
   </data>
-  <data name="datebox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="client_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
   </data>
-  <data name="datebox.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="client_box.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
-  <data name="&gt;&gt;datebox.Name" xml:space="preserve">
-    <value>datebox</value>
+  <data name="&gt;&gt;client_box.Name" xml:space="preserve">
+    <value>client_box</value>
   </data>
-  <data name="&gt;&gt;datebox.Type" xml:space="preserve">
+  <data name="&gt;&gt;client_box.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;datebox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;client_box.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;datebox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;client_box.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="taskbox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="date_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="taskbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 121</value>
-  </data>
-  <data name="taskbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 26</value>
-  </data>
-  <data name="taskbox.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;taskbox.Name" xml:space="preserve">
-    <value>taskbox</value>
-  </data>
-  <data name="&gt;&gt;taskbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;taskbox.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;taskbox.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="sotrudnikbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt</value>
-  </data>
-  <data name="sotrudnikbox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="date_box.Location" type="System.Drawing.Point, System.Drawing">
     <value>165, 121</value>
   </data>
-  <data name="sotrudnikbox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="date_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
   </data>
-  <data name="sotrudnikbox.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="date_box.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;sotrudnikbox.Name" xml:space="preserve">
-    <value>sotrudnikbox</value>
+  <data name="&gt;&gt;date_box.Name" xml:space="preserve">
+    <value>date_box</value>
   </data>
-  <data name="&gt;&gt;sotrudnikbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;date_box.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sotrudnikbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;date_box.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;sotrudnikbox.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;date_box.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="idbox.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="problem_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
-  <data name="idbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 41</value>
+  <data name="problem_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 41</value>
   </data>
-  <data name="idbox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="problem_box.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 26</value>
   </data>
-  <data name="idbox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="problem_box.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
   </data>
-  <data name="&gt;&gt;idbox.Name" xml:space="preserve">
-    <value>idbox</value>
+  <data name="&gt;&gt;problem_box.Name" xml:space="preserve">
+    <value>problem_box</value>
   </data>
-  <data name="&gt;&gt;idbox.Type" xml:space="preserve">
+  <data name="&gt;&gt;problem_box.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;idbox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;problem_box.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;idbox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;problem_box.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="sotrudnik_box.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="sotrudnik_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 121</value>
+  </data>
+  <data name="sotrudnik_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 26</value>
+  </data>
+  <data name="sotrudnik_box.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;sotrudnik_box.Name" xml:space="preserve">
+    <value>sotrudnik_box</value>
+  </data>
+  <data name="&gt;&gt;sotrudnik_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sotrudnik_box.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;sotrudnik_box.ZOrder" xml:space="preserve">
     <value>14</value>
+  </data>
+  <data name="id_box.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="id_box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 41</value>
+  </data>
+  <data name="id_box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 26</value>
+  </data>
+  <data name="id_box.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;id_box.Name" xml:space="preserve">
+    <value>id_box</value>
+  </data>
+  <data name="&gt;&gt;id_box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;id_box.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;id_box.ZOrder" xml:space="preserve">
+    <value>15</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -593,39 +618,21 @@
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column1.HeaderText" xml:space="preserve">
-    <value>ID</value>
-  </data>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column6.HeaderText" xml:space="preserve">
-    <value>Задача</value>
-  </data>
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column2.HeaderText" xml:space="preserve">
-    <value>Имя клинета</value>
-  </data>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column3.HeaderText" xml:space="preserve">
-    <value>Имя сотрудника</value>
-  </data>
   <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column4.HeaderText" xml:space="preserve">
-    <value>Дата оформления заявки</value>
-  </data>
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column5.HeaderText" xml:space="preserve">
-    <value>Статус заявки</value>
-  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 154</value>
   </data>
@@ -711,10 +718,10 @@
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
-    <value>id</value>
+    <value>Номер договора</value>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
-    <value>Task</value>
+    <value>Задача</value>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
     <value>Сlient</value>
@@ -748,6 +755,51 @@
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Номер договора</value>
+  </data>
+  <data name="Column1.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column6.HeaderText" xml:space="preserve">
+    <value>Проблема</value>
+  </data>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column2.HeaderText" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Тех. специалист</value>
+  </data>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column4.HeaderText" xml:space="preserve">
+    <value>Дата обращения</value>
+  </data>
+  <data name="Column4.Width" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column5.HeaderText" xml:space="preserve">
+    <value>Статус выполнения</value>
+  </data>
+  <data name="Column5.Width" type="System.Int32, mscorlib">
+    <value>120</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1116,7 +1168,6 @@
         AAA=
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>

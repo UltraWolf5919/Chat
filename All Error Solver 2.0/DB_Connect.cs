@@ -17,7 +17,7 @@ namespace All_Error_Solver
 
     class New_DB_Connect
     {
-        private static MySqlConnection getconnect()
+        private static MySqlConnection Getconnect()
         {
             string connect = ";Server=" + Properties.Settings.Default.host +
                 ";Port=" + Properties.Settings.Default.port +
@@ -30,9 +30,9 @@ namespace All_Error_Solver
             return connection;
         }
 
-        public static DataTable select(string sql, List<DbParameter> parameters)
+        public static DataTable Select(string sql, List<DbParameter> parameters)
         {
-            MySqlConnection connection = getconnect();
+            MySqlConnection connection = Getconnect();
             MySqlCommand command = new MySqlCommand(sql, connection);
             DataTable table = new DataTable();
 
@@ -55,7 +55,7 @@ namespace All_Error_Solver
         }
     }
 
-    /*class Old_DB_Connect
+    class Old_DB_Connect
     {
         public static MySqlConnection GetConfig()
         {
@@ -108,5 +108,5 @@ namespace All_Error_Solver
                 MessageBox.Show(ex.Message);
             }
         }
-    }*/
+    }
 }

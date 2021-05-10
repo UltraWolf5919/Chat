@@ -427,8 +427,6 @@ D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\System.We
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.xml
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.Data.xml
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.xml
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Log_in.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Properties.Resources.resources
@@ -505,16 +503,71 @@ Z:\Новая папка\All Error Solver 2.0\obj\Debug\en\All Error Solver.reso
 Z:\Новая папка\All Error Solver 2.0\obj\Debug\nl-NL\All Error Solver.resources.dll
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\en-AU\All Error Solver.resources.dll
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\en\All Error Solver.resources.dll
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\bin\Debug\nl-NL\All Error Solver.resources.dll
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat_message.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en-AU.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.en.resources
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat_message.en.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.en.resources
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.nl-NL.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.en.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.en.resources
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
-D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\nl-NL\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.NewPassword.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\All Error Solver.exe.config
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\All Error Solver.exe
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\All Error Solver.pdb
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\en-AU\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\en\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\BouncyCastle.Crypto.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Google.Protobuf.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\MySql.Data.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Renci.SshNet.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Buffers.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Memory.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Numerics.Vectors.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.Helpers.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.Razor.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\WebMatrix.Data.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Google.Protobuf.pdb
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Google.Protobuf.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\MySql.Data.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\Renci.SshNet.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Buffers.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Memory.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Numerics.Vectors.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.Helpers.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.Razor.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\WebMatrix.Data.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.xml
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.NewPassword.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Properties.Resources.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Settings.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en-AU.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.en.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.en.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.en.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.en.resources
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.GenerateResource.cache
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CopyComplete
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.exe
+D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
+D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache

@@ -15,7 +15,7 @@
       <Value Profile="(Default)">ISP434_StarostinLF</Value>
     </Setting>
     <Setting Name="password" Type="System.String" Scope="User">
-      <Value Profile="(Default)">	Avatar5919Leonid</Value>
+      <Value Profile="(Default)">Avatar5919Leonid</Value>
     </Setting>
   </Settings>
 </SettingsFile>

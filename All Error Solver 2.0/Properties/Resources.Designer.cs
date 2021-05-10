@@ -63,9 +63,39 @@ namespace All_Error_Solver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Axus_Integration {
+        internal static System.Drawing.Bitmap _1digitization_4667376_1920_1x {
             get {
-                object obj = ResourceManager.GetObject("Axus Integration", resourceCulture);
+                object obj = ResourceManager.GetObject("1digitization-4667376_1920_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calm_4878488_1920_1x {
+            get {
+                object obj = ResourceManager.GetObject("calm-4878488_1920_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap digital_background_1x {
+            get {
+                object obj = ResourceManager.GetObject("digital-background_1x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

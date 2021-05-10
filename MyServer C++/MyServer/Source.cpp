@@ -67,7 +67,7 @@ int main()
 	freeaddrinfo(result);
 
 	printf("Server started successfully...\n");
-	char m_connect[] = "Connected...";
+	char m_connect[] = "Connected...\n";
 
 	// обработка клиентов
 	for (;; Sleep(75))

@@ -126,7 +126,7 @@
     <value>Century Gothic, 11.25pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 64</value>
+    <value>42, 37</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 20</value>
@@ -147,23 +147,23 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="message_entering_richtextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 480</value>
+    <value>10, 522</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="message_entering_richtextbox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
   <data name="message_entering_richtextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 49</value>
+    <value>404, 49</value>
   </data>
   <data name="message_entering_richtextbox.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
   <data name="message_entering_richtextbox.Text" xml:space="preserve">
-    <value />
+    <value>Введите текст...</value>
   </data>
   <data name="&gt;&gt;message_entering_richtextbox.Name" xml:space="preserve">
     <value>message_entering_richtextbox</value>
@@ -175,37 +175,37 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;message_entering_richtextbox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
-  <data name="richTextBox1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Dialog_richTextBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 12pt</value>
   </data>
-  <data name="richTextBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 142</value>
+  <data name="Dialog_richTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 184</value>
   </data>
-  <data name="richTextBox1.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+  <data name="Dialog_richTextBox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
-  <data name="richTextBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>508, 303</value>
+  <data name="Dialog_richTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>508, 332</value>
   </data>
-  <data name="richTextBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="Dialog_richTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="Dialog_richTextBox.Text" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;richTextBox1.Name" xml:space="preserve">
-    <value>richTextBox1</value>
+  <data name="&gt;&gt;Dialog_richTextBox.Name" xml:space="preserve">
+    <value>Dialog_richTextBox</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;Dialog_richTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Dialog_richTextBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;Dialog_richTextBox.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -214,7 +214,7 @@
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 121</value>
+    <value>10, 163</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 18</value>
@@ -235,70 +235,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>11</value>
   </data>
-  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 37</value>
-  </data>
-  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 20</value>
-  </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
-    <value>textBox1</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Login.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt</value>
-  </data>
-  <data name="Login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 63</value>
-  </data>
-  <data name="Login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 26</value>
-  </data>
-  <data name="Login.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="Login.Text" xml:space="preserve">
-    <value>Войти</value>
-  </data>
-  <data name="&gt;&gt;Login.Name" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;Login.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Login.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="Send.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="Send.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt</value>
+    <value>Century Gothic, 11.25pt, style=Bold</value>
   </data>
   <data name="Send.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 480</value>
+    <value>420, 522</value>
   </data>
   <data name="Send.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 49</value>
+    <value>101, 49</value>
   </data>
   <data name="Send.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="Send.Text" xml:space="preserve">
     <value>Отправить</value>
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <data name="Send.ToolTip" xml:space="preserve">
+    <value>Отправить сообщение в диалог.</value>
   </data>
   <data name="&gt;&gt;Send.Name" xml:space="preserve">
     <value>Send</value>
@@ -310,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Send.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -319,25 +280,31 @@
     <value>None</value>
   </data>
   <data name="menuStrip1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9.75pt</value>
+    <value>Century Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="настройкиToolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SettingsToolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt</value>
   </data>
-  <data name="настройкиToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SettingsToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 26</value>
   </data>
-  <data name="настройкиToolStripMenuItem1.Text" xml:space="preserve">
+  <data name="SettingsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Настройки</value>
   </data>
-  <data name="свернутьToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="SettingsToolStripMenuItem1.ToolTipText" xml:space="preserve">
+    <value>Открыть настройки соеднинения с сервером.</value>
+  </data>
+  <data name="MinimizeToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt</value>
   </data>
-  <data name="свернутьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MinimizeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 26</value>
   </data>
-  <data name="свернутьToolStripMenuItem.Text" xml:space="preserve">
+  <data name="MinimizeToolStripMenuItem.Text" xml:space="preserve">
     <value>Свернуть</value>
+  </data>
+  <data name="MinimizeToolStripMenuItem.ToolTipText" xml:space="preserve">
+    <value>Свернуть чат в трей.</value>
   </data>
   <data name="ExitToolStripMenuItem1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt</value>
@@ -347,6 +314,9 @@
   </data>
   <data name="ExitToolStripMenuItem1.Text" xml:space="preserve">
     <value>Выход</value>
+  </data>
+  <data name="ExitToolStripMenuItem1.ToolTipText" xml:space="preserve">
+    <value>Выход из чата.</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>211, 9</value>
@@ -370,7 +340,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -379,7 +349,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 63</value>
+    <value>43, 20</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 17</value>
@@ -400,64 +370,241 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>7</value>
   </data>
-  <data name="Exit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Comic Sans MS, 9.75pt</value>
-  </data>
-  <data name="Exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 95</value>
-  </data>
-  <data name="Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 23</value>
-  </data>
-  <data name="Exit.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="Exit.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
-  <data name="Exit.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Exit.Name" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="&gt;&gt;Exit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Exit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Exit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="polzovatellabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 21</value>
+  <data name="polzovatellabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
+  <data name="polzovatellabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 57</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="polzovatellabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 23</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Имя админа</value>
+  <data name="polzovatellabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="polzovatellabel.Text" xml:space="preserve">
+    <value>Пользователь (Вы):</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;polzovatellabel.Name" xml:space="preserve">
+    <value>polzovatellabel</value>
+  </data>
+  <data name="&gt;&gt;polzovatellabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;polzovatellabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;polzovatellabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="namelabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="namelabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="namelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="namelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 58</value>
+  </data>
+  <data name="namelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="namelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="namelabel.Text" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="&gt;&gt;namelabel.Name" xml:space="preserve">
+    <value>namelabel</value>
+  </data>
+  <data name="&gt;&gt;namelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;namelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;namelabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dogloginlabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dogloginlabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt</value>
+  </data>
+  <data name="dogloginlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dogloginlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 81</value>
+  </data>
+  <data name="dogloginlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 22</value>
+  </data>
+  <data name="dogloginlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="dogloginlabel.Text" xml:space="preserve">
+    <value>label</value>
+  </data>
+  <data name="&gt;&gt;dogloginlabel.Name" xml:space="preserve">
+    <value>dogloginlabel</value>
+  </data>
+  <data name="&gt;&gt;dogloginlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dogloginlabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dogloginlabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="dogovorlabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dogovorlabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="dogovorlabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dogovorlabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="dogovorlabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 23</value>
+  </data>
+  <data name="dogovorlabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="dogovorlabel.Text" xml:space="preserve">
+    <value>Ваш договор:</value>
+  </data>
+  <data name="&gt;&gt;dogovorlabel.Name" xml:space="preserve">
+    <value>dogovorlabel</value>
+  </data>
+  <data name="&gt;&gt;dogovorlabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dogovorlabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dogovorlabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="requests_button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="requests_button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="requests_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="requests_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 115</value>
+  </data>
+  <data name="requests_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 27</value>
+  </data>
+  <data name="requests_button.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="requests_button.Text" xml:space="preserve">
+    <value>Открыть заявки</value>
+  </data>
+  <data name="requests_button.ToolTip" xml:space="preserve">
+    <value>Отправить сообщение в диалог.</value>
+  </data>
+  <data name="&gt;&gt;requests_button.Name" xml:space="preserve">
+    <value>requests_button</value>
+  </data>
+  <data name="&gt;&gt;requests_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;requests_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;requests_button.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="workers_button.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="workers_button.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="workers_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="workers_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 151</value>
+  </data>
+  <data name="workers_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 27</value>
+  </data>
+  <data name="workers_button.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="workers_button.Text" xml:space="preserve">
+    <value>Список тех. спец-ов</value>
+  </data>
+  <data name="workers_button.ToolTip" xml:space="preserve">
+    <value>Отправить сообщение в диалог.</value>
+  </data>
+  <data name="&gt;&gt;workers_button.Name" xml:space="preserve">
+    <value>workers_button</value>
+  </data>
+  <data name="&gt;&gt;workers_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;workers_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;workers_button.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="dialog_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 18pt</value>
+  </data>
+  <data name="dialog_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dialog_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 281</value>
+  </data>
+  <data name="dialog_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 130</value>
+  </data>
+  <data name="dialog_label.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="dialog_label.Text" xml:space="preserve">
+    <value>Здесь пока пусто... Напишите свою проблему, и мы на неё ответим как можно быстрее!</value>
+  </data>
+  <data name="dialog_label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;dialog_label.Name" xml:space="preserve">
+    <value>dialog_label</value>
+  </data>
+  <data name="&gt;&gt;dialog_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dialog_label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dialog_label.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -468,8 +615,11 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <data name="$this.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>533, 538</value>
+    <value>533, 583</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -830,21 +980,21 @@
 </value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+    <value>Manual</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Чат</value>
+    <value>Axus Group® чат тех. поддержки</value>
   </data>
-  <data name="&gt;&gt;настройкиToolStripMenuItem1.Name" xml:space="preserve">
-    <value>настройкиToolStripMenuItem1</value>
+  <data name="&gt;&gt;SettingsToolStripMenuItem1.Name" xml:space="preserve">
+    <value>SettingsToolStripMenuItem1</value>
   </data>
-  <data name="&gt;&gt;настройкиToolStripMenuItem1.Type" xml:space="preserve">
+  <data name="&gt;&gt;SettingsToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;свернутьToolStripMenuItem.Name" xml:space="preserve">
-    <value>свернутьToolStripMenuItem</value>
+  <data name="&gt;&gt;MinimizeToolStripMenuItem.Name" xml:space="preserve">
+    <value>MinimizeToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;свернутьToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;MinimizeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ExitToolStripMenuItem1.Name" xml:space="preserve">
@@ -852,6 +1002,12 @@
   </data>
   <data name="&gt;&gt;ExitToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Chat</value>

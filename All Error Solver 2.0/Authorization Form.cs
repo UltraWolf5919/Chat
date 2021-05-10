@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Net.Sockets;
@@ -18,30 +19,29 @@ namespace All_Error_Solver
         public Authorization()
         {
             InitializeComponent();
+            Main m = new Main();
+            m.Solve.Enabled = true;
         }
 
-        private void LogIn_Click(object sender, EventArgs e)
+        public void LogIn_Click(object sender, EventArgs e)
         {
             //DataTable admin_auth = Old_DB_Connect.Getdt($"SELECT * FROM `admin_auth` WHERE `Login` = '{loginauthbox.Text}'  and `Password` = '{passauthbox.Text}';");
 
-            DataTable admin_auth = New_DB_Connect.select("SELECT * FROM `admin_auth` WHERE `Login` = @Login  and `Password` = @Password;",
+            DataTable sotrudnik_auth = New_DB_Connect.Select("SELECT * FROM `sotrudnik_auth` WHERE `Login` = @Login  and `Password` = @Password;",
                 new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
                     new DbParameter { name = "@Password", value = passauthbox.Text } });
 
-            if (admin_auth.Rows.Count > 0)
-            {
-                Main m = new Main();
-                m.Admin.Visible = true;
-                m.Requests.Visible = false;
+            DataTable client_auth = New_DB_Connect.Select("SELECT * FROM `client_auth` WHERE `Login` = @Login  and `Password` = @Password;",
+                new List<DbParameter> { new DbParameter { name = "@Login", value = loginauthbox.Text  },
+                    new DbParameter { name = "@Password", value = passauthbox.Text } });
 
-                MessageBox.Show("Вы авторизованы как администратор.", "Сообщение");
-                m.ShowDialog();
-            }
-            else
-            {
-                Chat ch = new Chat();
+            Chat ch = new Chat();
+            Main m = new Main();
+            Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            Requests req = new Requests();
 
-                Chat.Client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            if (sotrudnik_auth.Rows.Count > 0)
+            {
                 if (ch.ip != null)
                 {
                     try
@@ -53,27 +53,77 @@ namespace All_Error_Solver
                         });
                         Chat.th.Start();
 
-                        ch.SendMessage(loginauthbox.Text + " вошёл в чат." + ";;;5");
+                        ch.SendMessage("\n" + sotrudnik_auth.Rows[0]["FIO"].ToString() + " вошёл в чат." + ";;;5" + "\n");
+                        MessageBox.Show("Добро пожаловать, " + sotrudnik_auth.Rows[0]["FIO"].ToString() + "!", "Сообщение");
 
-                        ch.textBox1.Visible = false;
-                        ch.Exit.Visible = false;
-                        ch.Login.Visible = false;
-                        ch.label1.Visible = false;
+                        ch.namelabel.Text = sotrudnik_auth.Rows[0]["FIO"].ToString();
+                        ch.dogloginlabel.Visible = false;
+                        ch.dogovorlabel.Visible = false;
 
                         ch.Show();
+
+                        Close();
                     }
                     catch
                     {
-                        MessageBox.Show("Не удалось подключиться к чату.", "Ошибка", MessageBoxButtons.OK);
+                        MessageBox.Show("Не удалось подключиться к чату. Повторите попытку позднее.", "Ошибка", MessageBoxButtons.OK);
                     }
                 }
-            }            
+            }
+            else
+            {
+                if (client_auth.Rows.Count > 0)
+                {
+                    if (ch.ip != null)
+                    {
+                        try
+                        {
+                            Chat.Client.Connect(ch.ip, ch.port);
+                            Chat.th = new Thread(delegate ()
+                            {
+                                ch.RecvMessage();
+                            });
+                            Chat.th.Start();
+
+                            ch.SendMessage("\n" + client_auth.Rows[0]["FIO"].ToString() + " вошёл в чат." + ";;;5" + "\n");
+                            MessageBox.Show("Добро пожаловать, " + client_auth.Rows[0]["FIO"].ToString() + "!", "Сообщение");
+
+                            ch.namelabel.Text = client_auth.Rows[0]["FIO"].ToString();
+                            ch.dogloginlabel.Text = loginauthbox.Text;
+                            ch.requests_button.Visible = false;
+                            ch.workers_button.Visible = false;
+
+                            ch.Show();
+
+                            Close();
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Не удалось подключиться к чату. Повторите попытку позднее.", "Ошибка", MessageBoxButtons.OK);
+                        }
+                    }
+                }
+                else MessageBox.Show("Неправильный логин или пароль. Попробуйте войти ещё раз.", "Ошибка", MessageBoxButtons.OK);
+            }
         }
 
-        private void SignIn_Click(object sender, EventArgs e)
+        private void Password_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //Log_in win2 = new Log_in();
-            //win2.ShowDialog();
+            NewPassword np = new NewPassword();
+            np.ShowDialog();
+            Hide();
+        }
+
+        private void Authorization_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void Authorization_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Main m = new Main();
+            m.Solve.Enabled = true;
+            m.Refresh();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,60 +15,48 @@ namespace All_Error_Solver
     {
         public Main()
         {
+                        
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void Requests_Click(object sender, EventArgs e)
         {
             Requests req = new Requests();
             req.groupBox1.Visible = false;
-            req.ShowDialog();
+            if ((Application.OpenForms["Requests"] as Requests) != null)
+            {
+                //Form is already open
+            }
+            else req.Show();
         }
 
-        private void Workers_Click(object sender, EventArgs e)
+        private void Settings_Click(object sender, EventArgs e)
         {
-            Workers work = new Workers();
-            work.ShowDialog();
+            Settings s = new Settings();
+            s.Show();
+            //Workers work = new Workers();
+            //work.groupBox1.Visible = false;
+            //if ((Application.OpenForms["Workers"] as Workers) != null)
+            //{
+            //    //Form is already open
+            //}
+            //else work.Show();
         }
 
         private void Solve_Click_1(object sender, EventArgs e)
         {
-            if (Admin.Visible)
+            Authorization auth = new Authorization(); 
+            if ((Application.OpenForms["Authorization"] as Authorization) != null)
             {
-                Chat ch = new Chat();
-                ch.Exit.Visible = true;
-                ch.Login.Visible = true;
-                ch.textBox1.Visible = true;
-                ch.label1.Visible = true;
-                ch.Show();
+                //Form is already open
             }
-            else
-            {
-                Authorization auth = new Authorization();
-                auth.Show();
-            }            
+            else auth.Show();
         }
 
-        private void Admin_Click(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Requests admin_req = new Requests();
-            admin_req.groupBox1.Visible = true;
-            admin_req.ShowDialog();
-        }              
-
-        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("mailto:task@itservo.ru");
-        }
-
-        private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("mailto:sales@axus.name ");
-        }
-
-        private void LinkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("mailto:service-center@axus.name");
-        }
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+        }        
     }
 }

@@ -35,28 +35,29 @@
             this.deletedbutton = new System.Windows.Forms.Button();
             this.adddbutton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.statusbox = new System.Windows.Forms.TextBox();
+            this.status_box = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.updatebutton = new System.Windows.Forms.Button();
-            this.clientbox = new System.Windows.Forms.TextBox();
-            this.datebox = new System.Windows.Forms.TextBox();
-            this.taskbox = new System.Windows.Forms.TextBox();
-            this.sotrudnikbox = new System.Windows.Forms.TextBox();
-            this.idbox = new System.Windows.Forms.TextBox();
+            this.client_box = new System.Windows.Forms.TextBox();
+            this.date_box = new System.Windows.Forms.TextBox();
+            this.problem_box = new System.Windows.Forms.TextBox();
+            this.sotrudnik_box = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.id_box = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -70,25 +71,26 @@
             // 
             resources.ApplyResources(this.searchbox, "searchbox");
             this.searchbox.Name = "searchbox";
-            this.searchbox.TextChanged += new System.EventHandler(this.SearchBox_TextChanged);
+            this.searchbox.TextChanged += new System.EventHandler(this.SearchTextBox_TextChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.deletedbutton);
             this.groupBox1.Controls.Add(this.adddbutton);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.statusbox);
+            this.groupBox1.Controls.Add(this.status_box);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.updatebutton);
-            this.groupBox1.Controls.Add(this.clientbox);
-            this.groupBox1.Controls.Add(this.datebox);
-            this.groupBox1.Controls.Add(this.taskbox);
-            this.groupBox1.Controls.Add(this.sotrudnikbox);
-            this.groupBox1.Controls.Add(this.idbox);
+            this.groupBox1.Controls.Add(this.client_box);
+            this.groupBox1.Controls.Add(this.date_box);
+            this.groupBox1.Controls.Add(this.problem_box);
+            this.groupBox1.Controls.Add(this.sotrudnik_box);
+            this.groupBox1.Controls.Add(this.id_box);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
@@ -118,10 +120,10 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // statusbox
+            // status_box
             // 
-            resources.ApplyResources(this.statusbox, "statusbox");
-            this.statusbox.Name = "statusbox";
+            resources.ApplyResources(this.status_box, "status_box");
+            this.status_box.Name = "status_box";
             // 
             // label6
             // 
@@ -143,11 +145,6 @@
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // updatebutton
             // 
             this.updatebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -158,35 +155,31 @@
             this.updatebutton.UseVisualStyleBackColor = false;
             this.updatebutton.Click += new System.EventHandler(this.UpdateRequest_Click);
             // 
-            // clientbox
+            // client_box
             // 
-            resources.ApplyResources(this.clientbox, "clientbox");
-            this.clientbox.Name = "clientbox";
+            resources.ApplyResources(this.client_box, "client_box");
+            this.client_box.Name = "client_box";
             // 
-            // datebox
+            // date_box
             // 
-            resources.ApplyResources(this.datebox, "datebox");
-            this.datebox.Name = "datebox";
+            resources.ApplyResources(this.date_box, "date_box");
+            this.date_box.Name = "date_box";
             // 
-            // taskbox
+            // problem_box
             // 
-            resources.ApplyResources(this.taskbox, "taskbox");
-            this.taskbox.Name = "taskbox";
+            resources.ApplyResources(this.problem_box, "problem_box");
+            this.problem_box.Name = "problem_box";
             // 
-            // sotrudnikbox
+            // sotrudnik_box
             // 
-            resources.ApplyResources(this.sotrudnikbox, "sotrudnikbox");
-            this.sotrudnikbox.Name = "sotrudnikbox";
-            // 
-            // idbox
-            // 
-            resources.ApplyResources(this.idbox, "idbox");
-            this.idbox.Name = "idbox";
+            resources.ApplyResources(this.sotrudnik_box, "sotrudnik_box");
+            this.sotrudnik_box.Name = "sotrudnik_box";
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -203,46 +196,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 15F;
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column6
-            // 
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.FillWeight = 50F;
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column5
-            // 
-            resources.ApplyResources(this.Column5, "Column5");
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // label8
             // 
@@ -266,6 +219,69 @@
             resources.GetString("comboBox1.Items4"),
             resources.GetString("comboBox1.Items5")});
             this.comboBox1.Name = "comboBox1";
+            // 
+            // id_box
+            // 
+            resources.ApplyResources(this.id_box, "id_box");
+            this.id_box.Name = "id_box";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column1.FillWeight = 283.2487F;
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 40.38917F;
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 40.38917F;
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.FillWeight = 40.38917F;
+            resources.ApplyResources(this.Column3, "Column3");
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column4.FillWeight = 20.19459F;
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column5.FillWeight = 40.38917F;
+            resources.ApplyResources(this.Column5, "Column5");
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox2, "comboBox2");
+            this.comboBox2.Name = "comboBox2";
             // 
             // Requests
             // 
@@ -295,30 +311,31 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox searchbox;
         public System.Windows.Forms.GroupBox groupBox1;
-        public System.Windows.Forms.TextBox clientbox;
-        public System.Windows.Forms.TextBox datebox;
-        public System.Windows.Forms.TextBox taskbox;
-        public System.Windows.Forms.TextBox sotrudnikbox;
-        public System.Windows.Forms.TextBox idbox;
+        public System.Windows.Forms.TextBox client_box;
+        public System.Windows.Forms.TextBox date_box;
+        public System.Windows.Forms.TextBox problem_box;
+        public System.Windows.Forms.TextBox sotrudnik_box;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button adddbutton;
         private System.Windows.Forms.Label label7;
-        public System.Windows.Forms.TextBox statusbox;
+        public System.Windows.Forms.TextBox status_box;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button deletedbutton;
         private System.Windows.Forms.Button updatebutton;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox id_box;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }

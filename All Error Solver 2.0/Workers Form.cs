@@ -19,36 +19,56 @@ namespace All_Error_Solver
             InitializeComponent();
         }
 
-        void loaddata(List<Contacts_Class> userlist = null)
+        void Loaddata(List<Contacts_Class> userlist = null)
         {
             dataGridView1.Rows.Clear();
 
             List<Contacts_Class> cc = new List<Contacts_Class>();
 
             if (userlist == null)
-                cc = Contacts_Class.select();
+                cc = Contacts_Class.Select();
             else cc = userlist;
 
             foreach (Contacts_Class test in cc)
             {
-                int r = dataGridView1.Rows.Add(test.id, test.FIO, test.Position, test.Mail, test.Phone_number, test.Address);
+                int r = dataGridView1.Rows.Add(test.Id, test.FIO, test.Position, test.Mail, test.Phone_number, test.Address);
                 dataGridView1.Rows[r].Tag = test;
             }
         }
 
         private void Workers_Load(object sender, EventArgs e)
         {
-            loaddata();
+            Loaddata();
 
             //dataGridView1.DataSource = DB_Contacts.Getdt("SELECT * FROM contacts");
+        }        
+
+        private void Adddbutton_Click(object sender, EventArgs e)
+        {
+            Contacts_Class.Add(fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
+            Loaddata();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
+        private void Updatebutton_Click(object sender, EventArgs e)
         {
-            List<Contacts_Class> cc = Contacts_Class.search(comboBox1.Text, textBox1.Text);
-            loaddata(cc);
+            Contacts_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
+                fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
+            Loaddata();
+        }
+
+        private void Deletedbutton_Click(object sender, EventArgs e)
+        {
+            ((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Delete();
+            Loaddata();
+        }
+
+        private void SearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+            string[] Array = new string[] { "id", "FIO", "Position", "Mail", "Phone_number", "Address" };
+            List<Contacts_Class> cc = Contacts_Class.Search(Array[comboBox1.SelectedIndex], Search_textBox.Text);
+            Loaddata(cc);
 
             //dataGridView1.DataSource = DB_Contacts.Getdt(@"SELECT * FROM contacts WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
-        }        
+        }
     }
 }

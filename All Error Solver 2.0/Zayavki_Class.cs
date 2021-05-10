@@ -9,7 +9,7 @@ namespace All_Error_Solver
 {
     class Zayavki_Class
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Task { get; set; }
         public string Сlient { get; set; }
         public string Worker { get; set; }
@@ -18,12 +18,12 @@ namespace All_Error_Solver
 
         /*public enum UserType
         {
-            administrator, user
+            Номер, Задача, Имя клиента, Имя сотрудника, Дата оформления заказа, статус заявки
         }*/
 
         public Zayavki_Class(DataRow row)
         {
-            id = Convert.ToInt32(row["id"]);
+            Id = Convert.ToInt32(row["id"]);
             Task = Convert.ToString(row["Task"]);
             Сlient = Convert.ToString(row["Сlient"]);
             Worker = Convert.ToString(row["Worker"]);
@@ -31,9 +31,9 @@ namespace All_Error_Solver
             Request_status = Convert.ToString(row["Request_status"]);
         }
 
-        public static List<Zayavki_Class> select()
+        public static List<Zayavki_Class> Select()
         {
-            DataTable dt = New_DB_Connect.select("SELECT * FROM `zayavki` ", new List<DbParameter>());
+            DataTable dt = New_DB_Connect.Select("SELECT * FROM `zayavki` ", new List<DbParameter>());
             List<Zayavki_Class> zc = new List<Zayavki_Class>();
 
             foreach (DataRow row in dt.Rows)
@@ -42,14 +42,14 @@ namespace All_Error_Solver
             return zc;
         }
 
-        public void delete()
+        public void Delete()
         {
-            New_DB_Connect.select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = id } });
+            New_DB_Connect.Select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
-        public static void add(string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
+        public static void Add(string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.select("INSERT INTO `zayavki` (`Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
+            New_DB_Connect.Select("INSERT INTO `zayavki` (`Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
               new List<DbParameter>() { new DbParameter {name = "@Task", value = Task},
                 new DbParameter {name = "@Сlient", value = Сlient},
                 new DbParameter {name = "@Worker", value = Worker},
@@ -57,9 +57,9 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Request_status", value = Request_status} });
         }
 
-        public static void update(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
+        public static void Update(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Сlient` = @Сlient, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `zayavki`.`id` = @id;",
+            New_DB_Connect.Select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Сlient` = @Сlient, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `zayavki`.`id` = @id;",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@Task", value = Task},
                 new DbParameter {name = "@Сlient", value = Сlient},
@@ -68,9 +68,9 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Request_status", value = Request_status} });
         }
 
-        public static List<Zayavki_Class> search(string searchParam, string searchValue)
+        public static List<Zayavki_Class> Search(string searchParam, string searchValue)
         {
-            DataTable dt = New_DB_Connect.select($"SELECT * FROM zayavki WHERE {searchParam} LIKE '%{searchValue}%';", new List<DbParameter>());
+            DataTable dt = New_DB_Connect.Select($"SELECT * FROM zayavki WHERE {searchParam} LIKE '%{searchValue}%';", new List<DbParameter>());
             List<Zayavki_Class> zc = new List<Zayavki_Class>();
 
             foreach (DataRow row in dt.Rows)
