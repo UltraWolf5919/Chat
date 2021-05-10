@@ -47,10 +47,11 @@ namespace All_Error_Solver
             New_DB_Connect.Select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
-        public static void Add(string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
+        public static void Add(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.Select("INSERT INTO `zayavki` (`Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
-              new List<DbParameter>() { new DbParameter {name = "@Task", value = Task},
+            New_DB_Connect.Select("INSERT INTO `zayavki` (`id`, `Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@id, @Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
+              new List<DbParameter>() { new DbParameter {name = "@id", value = id},
+                new DbParameter {name = "@Task", value = Task},
                 new DbParameter {name = "@Сlient", value = Сlient},
                 new DbParameter {name = "@Worker", value = Worker},
                 new DbParameter {name = "@Date_of_issue", value = Date_of_issue},

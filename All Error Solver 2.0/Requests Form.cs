@@ -9,7 +9,6 @@ namespace All_Error_Solver
         public Requests()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = 0;
         }
 
         private void Loaddata(List<Zayavki_Class> userlist = null)
@@ -42,28 +41,28 @@ namespace All_Error_Solver
 
         private void AddRequest_Click(object sender, EventArgs e)
         {
-            /*Zayavki_Class.Add(taskbox.Text, clientbox.Text, sotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
-            Loaddata();*/
+            Zayavki_Class.Add(Convert.ToInt32(id_box.Text), problem_box.Text, client_box.Text, sotrudnik_box.Text, Convert.ToDateTime(date_box.Text), status_box.Text);
+            Loaddata();
 
-            Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Task,Client,Worker,Date_of_issue,Request_status) VALUES('" + id_box.Text + "','" +
+            /*Old_DB_Connect.Getdt("INSERT INTO zayavki (id,Task,Client,Worker,Date_of_issue,Request_status) VALUES('" + id_box.Text + "','" +
                 problem_box.Text + "','" + client_box.Text + "','" + sotrudnik_box.Text + "','" + date_box.Text + "','" + status_box.Text + "')");
-            Updatetablezayavki();
+            Updatetablezayavki();*/
         }
 
         private void UpdateRequest_Click(object sender, EventArgs e)
         {
-            /*Zayavki_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
-                taskbox.Text, clientbox.Text, sotrudnikbox.Text, Convert.ToDateTime(datebox.Text), statusbox.Text);
-            Loaddata();*/
+            Zayavki_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
+                problem_box.Text, client_box.Text, sotrudnik_box.Text, Convert.ToDateTime(date_box.Text), status_box.Text);
+            Loaddata();
 
-            Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + id_box.Text +
+            /*Old_DB_Connect.Getdt(@"UPDATE zayavki SET `id` = '" + id_box.Text +
                 "', `Problem` = '" + problem_box.Text +
                 "',`Client` = '" + client_box.Text +
                 "',`Worker` = '" + sotrudnik_box.Text +
                 "',`Date_of_issue` = '" + date_box.Text +
                 "',`Request_status` = '" + status_box.Text +
                 "' WHERE `id` = " + dataGridView1.Rows[dataGridView1.CurrentCell.RowIndex].Cells[0].Value.ToString());
-            Updatetablezayavki();
+            Updatetablezayavki();*/
         }
 
         private void DeleteRequest_Click(object sender, EventArgs e)
@@ -82,6 +81,11 @@ namespace All_Error_Solver
             Loaddata(tu);
 
             //dataGridView1.DataSource = Old_DB_Connect.Getdt(@"SELECT * FROM zayavki WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

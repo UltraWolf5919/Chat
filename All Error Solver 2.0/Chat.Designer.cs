@@ -73,6 +73,7 @@
             this.Dialog_richTextBox.ForeColor = System.Drawing.Color.Black;
             this.Dialog_richTextBox.Name = "Dialog_richTextBox";
             this.Dialog_richTextBox.ReadOnly = true;
+            this.Dialog_richTextBox.TextChanged += new System.EventHandler(this.Dialog_richTextBox_TextChanged);
             // 
             // label2
             // 

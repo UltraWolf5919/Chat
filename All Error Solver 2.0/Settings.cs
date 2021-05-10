@@ -34,6 +34,8 @@ namespace All_Error_Solver
 
                     this.Hide();
 
+
+
                     Application.Restart();
                 }
                 catch (Exception ex)

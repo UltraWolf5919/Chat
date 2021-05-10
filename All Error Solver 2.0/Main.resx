@@ -167,6 +167,9 @@
   <data name="Requests.Text" xml:space="preserve">
     <value>Ваши заявки</value>
   </data>
+  <data name="Requests.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;Requests.Name" xml:space="preserve">
     <value>Requests</value>
   </data>
@@ -183,7 +186,7 @@
     <value>Century Gothic, 24pt, style=Bold</value>
   </data>
   <data name="Chat_settings_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 380</value>
+    <value>70, 312</value>
   </data>
   <data name="Chat_settings_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 62</value>
@@ -193,9 +196,6 @@
   </data>
   <data name="Chat_settings_button.Text" xml:space="preserve">
     <value>Настройки</value>
-  </data>
-  <data name="Chat_settings_button.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="&gt;&gt;Chat_settings_button.Name" xml:space="preserve">
     <value>Chat_settings_button</value>

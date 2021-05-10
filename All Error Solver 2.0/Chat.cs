@@ -164,6 +164,11 @@ namespace All_Error_Solver
             message_entering_richtextbox.Text = "Введите текст...";
         }
 
+        private void Dialog_richTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
         private void Message_entering_richtextbox_Enter(object sender, EventArgs e)
         {
             message_entering_richtextbox.Clear();
@@ -182,6 +187,6 @@ namespace All_Error_Solver
             Workers work = new Workers();
             work.groupBox1.Visible = true;
             work.Show();
-        }
+        }        
     }
 }
