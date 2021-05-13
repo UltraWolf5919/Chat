@@ -571,3 +571,61 @@ D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\ob
 D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.exe
 D:\Program Files (x86)\VS Projects\Сетевой чат\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
 D:\Program Files (x86)\VS Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\All Error Solver.exe.config
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\All Error Solver.exe
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\All Error Solver.pdb
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\en-AU\All Error Solver.resources.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\en\All Error Solver.resources.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\BouncyCastle.Crypto.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Google.Protobuf.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\MySql.Data.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Renci.SshNet.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Buffers.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Memory.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Numerics.Vectors.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.Helpers.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.Razor.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.Data.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Google.Protobuf.pdb
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Google.Protobuf.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\MySql.Data.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\Renci.SshNet.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Buffers.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Memory.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Numerics.Vectors.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.Helpers.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.Razor.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.Data.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.xml
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.NewPassword.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Properties.Resources.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Settings.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en-AU.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.en.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Chat.en.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.en.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Requests.en.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Workers.en.resources
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.GenerateResource.cache
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CoreCompileInputs.cache
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\en-AU\All Error Solver.resources.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\en\All Error Solver.resources.dll
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CopyComplete
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.exe
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.pdb

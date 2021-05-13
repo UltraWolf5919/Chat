@@ -23,8 +23,9 @@ namespace All_Error_Solver
         {
             dataGridView1.Rows.Clear();
 
-            List<Contacts_Class> cc = new List<Contacts_Class>();
+            _ = new List<Contacts_Class>();
 
+            List<Contacts_Class> cc;
             if (userlist == null)
                 cc = Contacts_Class.Select();
             else cc = userlist;

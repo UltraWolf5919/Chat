@@ -27,10 +27,10 @@ namespace All_Error_Solver
             }
         }
 
-        private void Updatetablezayavki()
-        {
-            dataGridView1.DataSource = Old_DB_Connect.Getdt("SELECT * FROM zayavki");
-        }
+        //private void Updatetablezayavki()
+        //{
+        //    dataGridView1.DataSource = Old_DB_Connect.Getdt("SELECT * FROM zayavki");
+        //}
 
         private void Requests_Load(object sender, EventArgs e)
         {            
@@ -83,7 +83,7 @@ namespace All_Error_Solver
             //dataGridView1.DataSource = Old_DB_Connect.Getdt(@"SELECT * FROM zayavki WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
             
         }
