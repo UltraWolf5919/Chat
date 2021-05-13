@@ -20,7 +20,6 @@ namespace All_Error_Solver
         {
             InitializeComponent();
             Main m = new Main();
-            m.Solve.Enabled = true;
         }
 
         public void LogIn_Click(object sender, EventArgs e)
@@ -60,9 +59,9 @@ namespace All_Error_Solver
                         ch.dogloginlabel.Visible = false;
                         ch.dogovorlabel.Visible = false;
 
-                        ch.Show();
-
                         Close();
+
+                        ch.Show();
                     }
                     catch
                     {
@@ -94,6 +93,7 @@ namespace All_Error_Solver
                             ch.workers_button.Visible = false;
 
                             ch.Show();
+                            m.Hide();
 
                             Close();
                         }
@@ -110,7 +110,7 @@ namespace All_Error_Solver
         private void Password_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             NewPassword np = new NewPassword();
-            np.ShowDialog();
+            np.Show();
             Hide();
         }
 

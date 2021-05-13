@@ -14,8 +14,7 @@ namespace All_Error_Solver
     public partial class Main : Form
     {
         public Main()
-        {
-                        
+        {                        
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
         }

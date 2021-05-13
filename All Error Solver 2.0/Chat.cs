@@ -22,6 +22,10 @@ namespace All_Error_Solver
         public int port = 0;
         public static Thread th;
 
+        private Int32 tmpX;
+        private Int32 tmpY;
+        private bool flMove = false;
+
         public Chat()
         {
             InitializeComponent();
@@ -52,11 +56,7 @@ namespace All_Error_Solver
                 label4.Text = "Настройки не найдены!";
                 MessageBox.Show("Настройки IP-адреса не заданы или сервер был отключен.", "Ошибка", MessageBoxButtons.OK);
             }
-        }
-
-        private Int32 tmpX;
-        private Int32 tmpY;
-        private bool flMove = false;
+        }        
 
         private void Chat_MouseMove(object sender, MouseEventArgs e)
         {
@@ -82,22 +82,28 @@ namespace All_Error_Solver
             flMove = false;
         }
 
-        private void SettingsToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void MinimizeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Settings form = new Settings();
-            form.Show();
+            WindowState = FormWindowState.Minimized;
         }
 
         private void ExitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Main m = new Main();
+            Requests r = new Requests();
+            Workers w = new Workers();
 
+            r.Hide();
+            w.Hide();
+            Main m = new Main();
+            
             SendMessage("\n" + namelabel.Text + " вышел из чата." + ";;;5" + "\n");
             Send.Enabled = false;
             message_entering_richtextbox.Clear();
             message_entering_richtextbox.Enabled = false;
             th.Abort();
             m.Solve.Enabled = true;
+
+
             Close();
         }
 
@@ -187,6 +193,6 @@ namespace All_Error_Solver
             Workers work = new Workers();
             work.groupBox1.Visible = true;
             work.Show();
-        }        
+        }
     }
 }

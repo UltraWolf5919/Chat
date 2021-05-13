@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Send = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.SettingsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.MinimizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
@@ -99,23 +98,16 @@
             this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SettingsToolStripMenuItem1,
             this.MinimizeToolStripMenuItem,
             this.ExitToolStripMenuItem1});
             this.menuStrip1.Name = "menuStrip1";
-            // 
-            // SettingsToolStripMenuItem1
-            // 
-            resources.ApplyResources(this.SettingsToolStripMenuItem1, "SettingsToolStripMenuItem1");
-            this.SettingsToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.SettingsToolStripMenuItem1.Name = "SettingsToolStripMenuItem1";
-            this.SettingsToolStripMenuItem1.Click += new System.EventHandler(this.SettingsToolStripMenuItem1_Click);
             // 
             // MinimizeToolStripMenuItem
             // 
             resources.ApplyResources(this.MinimizeToolStripMenuItem, "MinimizeToolStripMenuItem");
             this.MinimizeToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.MinimizeToolStripMenuItem.Name = "MinimizeToolStripMenuItem";
+            this.MinimizeToolStripMenuItem.Click += new System.EventHandler(this.MinimizeToolStripMenuItem_Click);
             // 
             // ExitToolStripMenuItem1
             // 
@@ -228,7 +220,6 @@
         private System.Windows.Forms.RichTextBox Dialog_richTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem1;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.RichTextBox message_entering_richtextbox;
