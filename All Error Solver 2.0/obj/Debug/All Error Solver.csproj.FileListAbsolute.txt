@@ -607,7 +607,6 @@ D:\Программы и приложения\Visual Studio\Projects\Chat\All Er
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\System.Web.WebPages.Razor.xml
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.Data.xml
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\bin\Debug\WebMatrix.WebData.xml
-D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.NewPassword.resources
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Authorization.resources
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All_Error_Solver.Main.resources

@@ -57,7 +57,7 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Address", value = Address} });
         }
 
-        public static void Update(int id, string FIO, string Position, string Mail, int Phone_number, string Address)
+        public static void Update(int id, string FIO, string Position, string Mail, long Phone_number, string Address)
         {
             New_DB_Connect.Select("UPDATE `contacts` SET `id` = @id, `FIO` = @FIO, `Position` = @Position, `Mail` = @Mail, `Phone_number` = @Phone_number, `Address` = @Address WHERE `contacts`.`id` = @id; ",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},

@@ -9,7 +9,7 @@ namespace All_Error_Solver
     {
         public Requests()
         {
-            InitializeComponent();
+            InitializeComponent(); Loaddata();
         }
 
         private void Loaddata(List<Zayavki_Class> userlist = null)
@@ -102,6 +102,16 @@ namespace All_Error_Solver
             //Updatetablezayavki();
         }
 
+        private void clear_button_Click(object sender, EventArgs e)
+        {
+            id_box.Clear();
+            problem_box.Clear();
+            client_box.Clear();
+            sotrudnik_box.Clear();
+            date_box.Clear();
+            status_box.Clear();
+        }
+
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
             string[] Array = new string[] { "id", "Task", "Клиент", "Тех. специалист", "Дата обращения", "Статус выполнения" };
@@ -121,21 +131,11 @@ namespace All_Error_Solver
             }
         }
 
-        private void problem_box_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            string Symbol = e.KeyChar.ToString();
-
-            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
-            {
-                e.Handled = true;
-            }
-        }
-
         private void client_box_KeyPress(object sender, KeyPressEventArgs e)
         {
             string Symbol = e.KeyChar.ToString();
 
-            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
             {
                 e.Handled = true;
             }
@@ -170,5 +170,15 @@ namespace All_Error_Solver
                 e.Handled = true;
             }
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            id_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id);
+            problem_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Task);
+            client_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Сlient);
+            sotrudnik_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Worker);
+            date_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Date_of_issue.ToShortDateString());
+            status_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Request_status);
+        }        
     }
 }

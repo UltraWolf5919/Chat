@@ -126,7 +126,7 @@
     <value>Century Gothic, 14.25pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>117, 9</value>
+    <value>170, 9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 22</value>
@@ -147,16 +147,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="searchbox.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="searchbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 109</value>
+    <value>121, 106</value>
   </data>
   <data name="searchbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 26</value>
+    <value>165, 26</value>
   </data>
   <data name="searchbox.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -171,7 +171,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;searchbox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Name" xml:space="preserve">
+    <value>clear_butt</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;warning_label.Name" xml:space="preserve">
     <value>warning_label</value>
@@ -183,7 +195,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;warning_label.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;deletedbutton.Name" xml:space="preserve">
     <value>deletedbutton</value>
@@ -195,7 +207,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;deletedbutton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;adddbutton.Name" xml:space="preserve">
     <value>adddbutton</value>
@@ -207,7 +219,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;adddbutton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -219,7 +231,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;status_box.Name" xml:space="preserve">
     <value>status_box</value>
@@ -231,7 +243,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;status_box.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -243,7 +255,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -255,7 +267,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -267,7 +279,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -279,7 +291,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -291,7 +303,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;updatebutton.Name" xml:space="preserve">
     <value>updatebutton</value>
@@ -303,7 +315,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;client_box.Name" xml:space="preserve">
     <value>client_box</value>
@@ -315,7 +327,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;client_box.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;date_box.Name" xml:space="preserve">
     <value>date_box</value>
@@ -327,7 +339,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;date_box.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;problem_box.Name" xml:space="preserve">
     <value>problem_box</value>
@@ -339,7 +351,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;problem_box.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;sotrudnik_box.Name" xml:space="preserve">
     <value>sotrudnik_box</value>
@@ -351,7 +363,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;sotrudnik_box.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;id_box.Name" xml:space="preserve">
     <value>id_box</value>
@@ -363,7 +375,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;id_box.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -372,7 +384,7 @@
     <value>292, 1</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>599, 157</value>
+    <value>599, 155</value>
   </data>
   <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -393,13 +405,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="deletedbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="deletedbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 105</value>
+    <value>486, 90</value>
   </data>
   <data name="deletedbutton.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 26</value>
@@ -420,13 +432,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;deletedbutton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="adddbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="adddbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 45</value>
+    <value>486, 30</value>
   </data>
   <data name="adddbutton.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 26</value>
@@ -447,7 +459,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;adddbutton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -474,7 +486,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="status_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -498,7 +510,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;status_box.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -525,7 +537,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -552,7 +564,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -579,7 +591,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -606,7 +618,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -637,13 +649,13 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="updatebutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
   <data name="updatebutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 76</value>
+    <value>486, 61</value>
   </data>
   <data name="updatebutton.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 26</value>
@@ -664,7 +676,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="client_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -688,7 +700,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;client_box.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="date_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -712,7 +724,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;date_box.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="problem_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -736,7 +748,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;problem_box.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="sotrudnik_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -760,7 +772,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;sotrudnik_box.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="id_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -784,7 +796,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;id_box.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -793,7 +805,7 @@
     <value>Номер договора</value>
   </data>
   <data name="Column1.Width" type="System.Int32, mscorlib">
-    <value>106</value>
+    <value>70</value>
   </data>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -807,11 +819,17 @@
   <data name="Column2.HeaderText" xml:space="preserve">
     <value>Клиент</value>
   </data>
+  <data name="Column2.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
   <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="Column3.HeaderText" xml:space="preserve">
     <value>Тех. специалист</value>
+  </data>
+  <data name="Column3.Width" type="System.Int32, mscorlib">
+    <value>180</value>
   </data>
   <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -820,7 +838,7 @@
     <value>Дата обращения</value>
   </data>
   <data name="Column4.Width" type="System.Int32, mscorlib">
-    <value>108</value>
+    <value>75</value>
   </data>
   <metadata name="Column5.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -850,7 +868,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -859,7 +877,7 @@
     <value>Century Gothic, 9pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 46</value>
+    <value>118, 43</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 17</value>
@@ -880,7 +898,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -889,7 +907,7 @@
     <value>Century Gothic, 9pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 91</value>
+    <value>118, 88</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 17</value>
@@ -910,7 +928,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="comboBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
@@ -934,10 +952,10 @@
     <value>Request_status</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 65</value>
+    <value>121, 62</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 23</value>
+    <value>165, 23</value>
   </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -952,7 +970,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="warning_label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -961,7 +979,7 @@
     <value>Century Gothic, 9.75pt</value>
   </data>
   <data name="warning_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>455, 23</value>
+    <value>160, 78</value>
   </data>
   <data name="warning_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 17</value>
@@ -985,6 +1003,122 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;warning_label.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="clear_butt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Comic Sans MS, 9.75pt</value>
+  </data>
+  <data name="clear_butt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="clear_butt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 119</value>
+  </data>
+  <data name="clear_butt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 26</value>
+  </data>
+  <data name="clear_butt.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="clear_butt.Text" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Name" xml:space="preserve">
+    <value>clear_butt</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;clear_butt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        rdWe61rUSpSjgck+mO2traEP/9k=
+</value>
+  </data>
+  <data name="pictureBox1.ImageLocation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 86</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

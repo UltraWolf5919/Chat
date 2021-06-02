@@ -71,8 +71,8 @@ namespace All_Error_Solver
             else
             {
                 warning_label.Visible = false;
-                Contacts_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
-                fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
+                Contacts_Class.Update(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Id,
+                fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt64(phone_number_box.Text), address_box.Text);
                 Loaddata();
             }
         }
@@ -90,6 +90,15 @@ namespace All_Error_Solver
                 ((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Delete();
                 Loaddata();
             }            
+        }
+
+        private void clear_butt_Click(object sender, EventArgs e)
+        {
+            fio_box.Clear();
+            dolzhnost_box.Clear();
+            email_box.Clear();
+            phone_number_box.Clear();
+            address_box.Clear();
         }
 
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
@@ -129,6 +138,15 @@ namespace All_Error_Solver
             {
                 e.Handled = true;
             }
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            fio_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).FIO);
+            dolzhnost_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Position);
+            email_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Mail);
+            phone_number_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Phone_number);
+            address_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Address);
         }
     }
 }
