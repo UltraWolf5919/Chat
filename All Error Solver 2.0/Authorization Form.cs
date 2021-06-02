@@ -61,7 +61,7 @@ namespace All_Error_Solver
 
                         Close();
 
-                        ch.Show();
+                        ch.ShowDialog();
                     }
                     catch
                     {
@@ -92,7 +92,7 @@ namespace All_Error_Solver
                             ch.requests_button.Visible = false;
                             ch.workers_button.Visible = false;
 
-                            ch.Show();
+                            ch.ShowDialog();
                             m.Hide();
 
                             Close();
@@ -110,8 +110,7 @@ namespace All_Error_Solver
         private void Password_linkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             NewPassword np = new NewPassword();
-            np.Show();
-            Hide();
+            np.ShowDialog();
         }
 
         private void Authorization_FormClosed(object sender, FormClosedEventArgs e)

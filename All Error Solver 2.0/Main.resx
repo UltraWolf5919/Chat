@@ -150,43 +150,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Solve.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Requests.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 27.75pt, style=Bold</value>
-  </data>
-  <data name="Requests.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 312</value>
-  </data>
-  <data name="Requests.Size" type="System.Drawing.Size, System.Drawing">
-    <value>373, 62</value>
-  </data>
-  <data name="Requests.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Requests.Text" xml:space="preserve">
-    <value>Ваши заявки</value>
-  </data>
-  <data name="Requests.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Requests.Name" xml:space="preserve">
-    <value>Requests</value>
-  </data>
-  <data name="&gt;&gt;Requests.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Requests.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Requests.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
   <data name="Chat_settings_button.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 24pt, style=Bold</value>
   </data>
   <data name="Chat_settings_button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 312</value>
+    <value>70, 323</value>
   </data>
   <data name="Chat_settings_button.Size" type="System.Drawing.Size, System.Drawing">
     <value>373, 62</value>

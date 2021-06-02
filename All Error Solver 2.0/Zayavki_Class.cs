@@ -16,11 +16,6 @@ namespace All_Error_Solver
         public DateTime Date_of_issue { get; set; }
         public string Request_status { get; set; }
 
-        /*public enum UserType
-        {
-            Номер, Задача, Имя клиента, Имя сотрудника, Дата оформления заказа, статус заявки
-        }*/
-
         public Zayavki_Class(DataRow row)
         {
             Id = Convert.ToInt32(row["id"]);

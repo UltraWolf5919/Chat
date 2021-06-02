@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.Solve = new System.Windows.Forms.Button();
-            this.Requests = new System.Windows.Forms.Button();
             this.Chat_settings_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,16 +50,6 @@
             this.toolTip1.SetToolTip(this.Solve, resources.GetString("Solve.ToolTip"));
             this.Solve.UseVisualStyleBackColor = false;
             this.Solve.Click += new System.EventHandler(this.Solve_Click_1);
-            // 
-            // Requests
-            // 
-            this.Requests.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Requests.Cursor = System.Windows.Forms.Cursors.Hand;
-            resources.ApplyResources(this.Requests, "Requests");
-            this.Requests.ForeColor = System.Drawing.Color.Yellow;
-            this.Requests.Name = "Requests";
-            this.Requests.UseVisualStyleBackColor = false;
-            this.Requests.Click += new System.EventHandler(this.Requests_Click);
             // 
             // Chat_settings_button
             // 
@@ -121,7 +110,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Chat_settings_button);
-            this.Controls.Add(this.Requests);
             this.Controls.Add(this.Solve);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -135,7 +123,6 @@
         #endregion
 
         public System.Windows.Forms.Button Solve;
-        public System.Windows.Forms.Button Requests;
         public System.Windows.Forms.Button Chat_settings_button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

@@ -29,17 +29,6 @@ namespace All_Error_Solver
             else auth.Show();
         }
 
-        private void Requests_Click(object sender, EventArgs e)
-        {
-            //Requests req = new Requests();
-            //req.groupBox1.Visible = false;
-            //if ((Application.OpenForms["Requests"] as Requests) != null)
-            //{
-            //    //Form is already open
-            //}
-            //else req.Show();
-        }
-
         private void Settings_Click(object sender, EventArgs e)
         {
             Settings s = new Settings();

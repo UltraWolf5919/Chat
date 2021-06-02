@@ -105,6 +105,7 @@ namespace All_Error_Solver
 
 
             Close();
+            MessageBox.Show("Вы вышли из чата.", "Сообщение", MessageBoxButtons.OK);
         }
 
         public void SendMessage(string message)
