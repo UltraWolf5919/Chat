@@ -140,7 +140,7 @@ namespace All_Error_Solver
             }
         }
 
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             fio_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).FIO);
             dolzhnost_box.Text = Convert.ToString(((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Position);

@@ -23,7 +23,7 @@ namespace All_Error_Solver
 
             foreach (Zayavki_Class test in zc)
             {
-                int r = dataGridView1.Rows.Add(test.Id, test.Task, test.Сlient, test.Worker, test.Date_of_issue.ToShortDateString(), test.Request_status);
+                int r = dataGridView1.Rows.Add(test.Id, test.Task, test.Client, test.Worker, test.Date_of_issue.ToShortDateString(), test.Request_status);
                 dataGridView1.Rows[r].Tag = test;
             }
         }
@@ -114,7 +114,7 @@ namespace All_Error_Solver
 
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
-            string[] Array = new string[] { "id", "Task", "Клиент", "Тех. специалист", "Дата обращения", "Статус выполнения" };
+            string[] Array = new string[] { "id", "Task", "Client", "Worker", "Date_of_issue", "Request_status" };
             List<Zayavki_Class> tu = Zayavki_Class.Search(Array[comboBox1.SelectedIndex], searchbox.Text);
             Loaddata(tu);
 
@@ -171,14 +171,14 @@ namespace All_Error_Solver
             }
         }
 
-        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id);
             problem_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Task);
-            client_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Сlient);
+            client_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Client);
             sotrudnik_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Worker);
             date_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Date_of_issue.ToShortDateString());
             status_box.Text = Convert.ToString(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Request_status);
-        }        
+        }
     }
 }

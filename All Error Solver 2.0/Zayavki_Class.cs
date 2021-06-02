@@ -11,7 +11,7 @@ namespace All_Error_Solver
     {
         public int Id { get; set; }
         public string Task { get; set; }
-        public string Сlient { get; set; }
+        public string Client { get; set; }
         public string Worker { get; set; }
         public DateTime Date_of_issue { get; set; }
         public string Request_status { get; set; }
@@ -20,7 +20,7 @@ namespace All_Error_Solver
         {
             Id = Convert.ToInt32(row["id"]);
             Task = Convert.ToString(row["Task"]);
-            Сlient = Convert.ToString(row["Сlient"]);
+            Client = Convert.ToString(row["Client"]);
             Worker = Convert.ToString(row["Worker"]);
             Date_of_issue = Convert.ToDateTime(row["Date_of_issue"]);
             Request_status = Convert.ToString(row["Request_status"]);
@@ -42,23 +42,23 @@ namespace All_Error_Solver
             New_DB_Connect.Select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
-        public static void Add(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
+        public static void Add(int id, string Task, string Client, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.Select("INSERT INTO `zayavki` (`id`, `Task`, `Сlient`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@id, @Task, @Сlient, @Worker, @Date_of_issue, @Request_status);",
+            New_DB_Connect.Select("INSERT INTO `zayavki` (`id`, `Task`, `Client`, `Worker`, `Date_of_issue`, `Request_status`) VALUES (@id, @Task, @Client, @Worker, @Date_of_issue, @Request_status);",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@Task", value = Task},
-                new DbParameter {name = "@Сlient", value = Сlient},
+                new DbParameter {name = "@Client", value = Client},
                 new DbParameter {name = "@Worker", value = Worker},
                 new DbParameter {name = "@Date_of_issue", value = Date_of_issue},
                 new DbParameter {name = "@Request_status", value = Request_status} });
         }
 
-        public static void Update(int id, string Task, string Сlient, string Worker, DateTime Date_of_issue, string Request_status)
+        public static void Update(int id, string Task, string Client, string Worker, DateTime Date_of_issue, string Request_status)
         {
-            New_DB_Connect.Select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Сlient` = @Сlient, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `zayavki`.`id` = @id;",
+            New_DB_Connect.Select("UPDATE `zayavki` SET `id` = @id, `Task` = @Task, `Client` = @Client, `Worker` = @Worker, `Date_of_issue` = @Date_of_issue, `Request_status` = @Request_status WHERE `zayavki`.`id` = @id;",
               new List<DbParameter>() { new DbParameter {name = "@id", value = id},
                 new DbParameter {name = "@Task", value = Task},
-                new DbParameter {name = "@Сlient", value = Сlient},
+                new DbParameter {name = "@Client", value = Client},
                 new DbParameter {name = "@Worker", value = Worker},
                 new DbParameter {name = "@Date_of_issue", value = Date_of_issue},
                 new DbParameter {name = "@Request_status", value = Request_status} });

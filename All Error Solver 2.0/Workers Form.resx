@@ -330,10 +330,10 @@
     <value>4</value>
   </data>
   <data name="comboBox1.Items" xml:space="preserve">
-    <value>id</value>
+    <value>ID</value>
   </data>
   <data name="comboBox1.Items1" xml:space="preserve">
-    <value>FIO</value>
+    <value>ФИО</value>
   </data>
   <data name="comboBox1.Items2" xml:space="preserve">
     <value>Должность</value>
@@ -378,13 +378,13 @@
     <value>115, 42</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 17</value>
+    <value>121, 17</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Введите столбец</value>
+    <value>Выберите столбец</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
