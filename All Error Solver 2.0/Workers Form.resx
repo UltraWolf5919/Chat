@@ -416,6 +416,42 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="warning_label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="warning_label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="warning_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="warning_label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>455, 20</value>
+  </data>
+  <data name="warning_label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 17</value>
+  </data>
+  <data name="warning_label.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="warning_label.Text" xml:space="preserve">
+    <value>Заполните все поля</value>
+  </data>
+  <data name="warning_label.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;warning_label.Name" xml:space="preserve">
+    <value>warning_label</value>
+  </data>
+  <data name="&gt;&gt;warning_label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;warning_label.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;warning_label.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="deletedbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
   </data>
@@ -444,7 +480,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;deletedbutton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="adddbutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -474,7 +510,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;adddbutton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -504,7 +540,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="address_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -528,7 +564,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;address_box.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -558,7 +594,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -588,7 +624,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -618,7 +654,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -648,7 +684,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="updatebutton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -678,7 +714,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;updatebutton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="dolzhnost_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -702,7 +738,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;dolzhnost_box.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="phone_number_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -726,7 +762,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;phone_number_box.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="fio_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -750,7 +786,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;fio_box.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="email_box.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>
@@ -774,7 +810,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;email_box.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="groupBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Comic Sans MS, 9.75pt</value>

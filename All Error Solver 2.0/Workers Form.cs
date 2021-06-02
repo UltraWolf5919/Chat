@@ -9,6 +9,7 @@ using System.Data.OleDb;
 using MySql.Data.MySqlClient;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace All_Error_Solver
 {
@@ -46,21 +47,49 @@ namespace All_Error_Solver
 
         private void Adddbutton_Click(object sender, EventArgs e)
         {
-            Contacts_Class.Add(fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
-            Loaddata();
+            if (fio_box.Text == "" || dolzhnost_box.Text == "" || email_box.Text == "" ||
+                phone_number_box.Text == "" || address_box.Text == "")
+            {
+                warning_label.Visible = true;
+            }
+            else
+            {
+                warning_label.Visible = false;
+                Contacts_Class.Add(fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
+                Loaddata();
+            }
+            
         }
 
         private void Updatebutton_Click(object sender, EventArgs e)
         {
-            Contacts_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
+            if (fio_box.Text == "" || dolzhnost_box.Text == "" || email_box.Text == "" ||
+                phone_number_box.Text == "" || address_box.Text == "")
+            {
+                warning_label.Visible = true;
+            }
+            else
+            {
+                warning_label.Visible = false;
+                Contacts_Class.Update(((Zayavki_Class)dataGridView1.SelectedRows[0].Tag).Id,
                 fio_box.Text, dolzhnost_box.Text, email_box.Text, Convert.ToInt32(phone_number_box.Text), address_box.Text);
-            Loaddata();
+                Loaddata();
+            }
         }
 
         private void Deletedbutton_Click(object sender, EventArgs e)
         {
-            ((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Delete();
-            Loaddata();
+            if (fio_box.Text == "" || dolzhnost_box.Text == "" || email_box.Text == "" ||
+                phone_number_box.Text == "" || address_box.Text == "")
+            {
+                warning_label.Visible = true;
+            }
+            else
+            {
+                warning_label.Visible = false;
+                ((Contacts_Class)dataGridView1.SelectedRows[0].Tag).Delete();
+                Loaddata();
+            }            
         }
 
         private void SearchTextBox_TextChanged(object sender, EventArgs e)
@@ -70,6 +99,36 @@ namespace All_Error_Solver
             Loaddata(cc);
 
             //dataGridView1.DataSource = DB_Contacts.Getdt(@"SELECT * FROM contacts WHERE " + comboBox1.Text + " LIKE '" + "%" + textBox1.Text + "%" + "';");
+        }
+
+        private void fio_box_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+
+            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void phone_number_box_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+
+            if (!Regex.Match(Symbol, @"[0-9]|[+]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void address_box_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[.]|[,]|[-]").Success)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

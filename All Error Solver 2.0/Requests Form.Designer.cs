@@ -57,6 +57,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.warning_label = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +75,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.warning_label);
             this.groupBox1.Controls.Add(this.deletedbutton);
             this.groupBox1.Controls.Add(this.adddbutton);
             this.groupBox1.Controls.Add(this.label7);
@@ -122,6 +124,7 @@
             // 
             resources.ApplyResources(this.status_box, "status_box");
             this.status_box.Name = "status_box";
+            this.status_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.status_box_KeyPress);
             // 
             // label6
             // 
@@ -162,26 +165,31 @@
             // 
             resources.ApplyResources(this.client_box, "client_box");
             this.client_box.Name = "client_box";
+            this.client_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.client_box_KeyPress);
             // 
             // date_box
             // 
             resources.ApplyResources(this.date_box, "date_box");
             this.date_box.Name = "date_box";
+            this.date_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.date_box_KeyPress);
             // 
             // problem_box
             // 
             resources.ApplyResources(this.problem_box, "problem_box");
             this.problem_box.Name = "problem_box";
+            this.problem_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.problem_box_KeyPress);
             // 
             // sotrudnik_box
             // 
             resources.ApplyResources(this.sotrudnik_box, "sotrudnik_box");
             this.sotrudnik_box.Name = "sotrudnik_box";
+            this.sotrudnik_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sotrudnik_box_KeyPress);
             // 
             // id_box
             // 
             resources.ApplyResources(this.id_box, "id_box");
             this.id_box.Name = "id_box";
+            this.id_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.id_box_KeyPress);
             // 
             // dataGridView1
             // 
@@ -275,6 +283,13 @@
             resources.GetString("comboBox1.Items5")});
             this.comboBox1.Name = "comboBox1";
             // 
+            // warning_label
+            // 
+            resources.ApplyResources(this.warning_label, "warning_label");
+            this.warning_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.warning_label.ForeColor = System.Drawing.Color.White;
+            this.warning_label.Name = "warning_label";
+            // 
             // Requests
             // 
             resources.ApplyResources(this, "$this");
@@ -328,5 +343,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Label warning_label;
     }
 }

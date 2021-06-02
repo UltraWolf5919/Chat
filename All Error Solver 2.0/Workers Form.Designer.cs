@@ -56,6 +56,7 @@
             this.phone_number_box = new System.Windows.Forms.TextBox();
             this.fio_box = new System.Windows.Forms.TextBox();
             this.email_box = new System.Windows.Forms.TextBox();
+            this.warning_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -165,6 +166,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.warning_label);
             this.groupBox1.Controls.Add(this.deletedbutton);
             this.groupBox1.Controls.Add(this.adddbutton);
             this.groupBox1.Controls.Add(this.label7);
@@ -211,6 +213,7 @@
             // 
             resources.ApplyResources(this.address_box, "address_box");
             this.address_box.Name = "address_box";
+            this.address_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.address_box_KeyPress);
             // 
             // label6
             // 
@@ -251,16 +254,25 @@
             // 
             resources.ApplyResources(this.phone_number_box, "phone_number_box");
             this.phone_number_box.Name = "phone_number_box";
+            this.phone_number_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phone_number_box_KeyPress);
             // 
             // fio_box
             // 
             resources.ApplyResources(this.fio_box, "fio_box");
             this.fio_box.Name = "fio_box";
+            this.fio_box.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.fio_box_KeyPress);
             // 
             // email_box
             // 
             resources.ApplyResources(this.email_box, "email_box");
             this.email_box.Name = "email_box";
+            // 
+            // warning_label
+            // 
+            resources.ApplyResources(this.warning_label, "warning_label");
+            this.warning_label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.warning_label.ForeColor = System.Drawing.Color.White;
+            this.warning_label.Name = "warning_label";
             // 
             // Workers
             // 
@@ -316,5 +328,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         public System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label warning_label;
     }
 }
