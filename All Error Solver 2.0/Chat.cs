@@ -163,8 +163,7 @@ namespace All_Error_Solver
         }
 
         private void Send_Click(object sender, EventArgs e) // Отправить
-        {
-            dialog_label.Hide();
+        {            
             SendMessage("\n" + namelabel.Text + ": " + message_entering_richtextbox.Text + ";;;5");
             message_entering_richtextbox.Clear();
             message_entering_richtextbox.ForeColor = Color.Gray;
@@ -173,7 +172,7 @@ namespace All_Error_Solver
 
         private void Dialog_richTextBox_TextChanged(object sender, EventArgs e)
         {
-            
+            dialog_label.Hide();
         }
 
         private void Message_entering_richtextbox_Enter(object sender, EventArgs e)
