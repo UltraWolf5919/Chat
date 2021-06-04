@@ -32,7 +32,7 @@ namespace All_Error_Solver
 
             //Dialog_richTextBox.Enabled = false;
 
-            this.Location = new Point(1920, 350);
+            //this.Location = new Point(1920, 350);
 
             this.FormBorderStyle = FormBorderStyle.None;
 
