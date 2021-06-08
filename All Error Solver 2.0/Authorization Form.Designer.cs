@@ -107,7 +107,6 @@
             this.MaximizeBox = false;
             this.Name = "Authorization";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Authorization_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Authorization_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -114,7 +114,7 @@ namespace All_Error_Solver
         {
             string Symbol = e.KeyChar.ToString();
 
-            if (!Regex.Match(Symbol, @"[а-яА-Я]").Success)
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[ ]").Success)
             {
                 e.Handled = true;
             }

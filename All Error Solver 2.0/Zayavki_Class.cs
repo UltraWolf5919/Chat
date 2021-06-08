@@ -35,12 +35,7 @@ namespace All_Error_Solver
                 zc.Add(new Zayavki_Class(row));
 
             return zc;
-        }
-
-        public void Delete()
-        {
-            New_DB_Connect.Select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
-        }
+        }        
 
         public static void Add(int id, string Task, string Client, string Worker, DateTime Date_of_issue, string Request_status)
         {
@@ -62,6 +57,11 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Worker", value = Worker},
                 new DbParameter {name = "@Date_of_issue", value = Date_of_issue},
                 new DbParameter {name = "@Request_status", value = Request_status} });
+        }
+
+        public void Delete()
+        {
+            New_DB_Connect.Select("DELETE FROM `zayavki` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
         public static List<Zayavki_Class> Search(string searchParam, string searchValue)

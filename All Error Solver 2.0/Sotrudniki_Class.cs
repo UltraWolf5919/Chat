@@ -31,12 +31,7 @@ namespace All_Error_Solver
                 zc.Add(new Zayavki_Class(row));
 
             return zc;
-        }
-
-        public void Delete()
-        {
-            New_DB_Connect.Select("DELETE FROM `sotrudnik_auth` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
-        }
+        }        
 
         public static void Add(string Name, string Login, string Password)
         {
@@ -53,6 +48,11 @@ namespace All_Error_Solver
                 new DbParameter {name = "@Name", value = Name},
                 new DbParameter {name = "@Login", value = Login},
                 new DbParameter {name = "@Password", value = Password} });
+        }
+
+        public void Delete()
+        {
+            New_DB_Connect.Select("DELETE FROM `sotrudnik_auth` WHERE `id` = @id", new List<DbParameter>() { new DbParameter { name = "@id", value = Id } });
         }
 
         public static List<Zayavki_Class> Search(string searchParam, string searchValue)

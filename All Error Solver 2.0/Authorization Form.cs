@@ -113,11 +113,6 @@ namespace All_Error_Solver
             np.ShowDialog();
         }
 
-        private void Authorization_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            
-        }
-
         private void Authorization_FormClosing(object sender, FormClosingEventArgs e)
         {
             Main m = new Main();

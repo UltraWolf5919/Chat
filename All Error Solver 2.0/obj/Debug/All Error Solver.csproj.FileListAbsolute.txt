@@ -628,3 +628,4 @@ D:\Программы и приложения\Visual Studio\Projects\Chat\All Er
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csproj.CopyComplete
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.exe
 D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.pdb
+D:\Программы и приложения\Visual Studio\Projects\Chat\All Error Solver 2.0\obj\Debug\All Error Solver.csprojAssemblyReference.cache
